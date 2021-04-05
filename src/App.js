@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Store } from "./store";
 import "./App.css";
+import Navbar from './components/Navbar';
 
 function App() {
   const [data, setData] = useState({
@@ -14,13 +16,13 @@ function App() {
   return (
     <Store.Provider value={[data, setData]}>
       <Router>
-        <div>HEADER</div>
+        <Navbar />
         <Switch>
           <Route path="/about">
             <div>Nosotros</div>
           </Route>
           <Route path="/">
-            <div>HOME</div>
+            <HomnePage />
           </Route>
         </Switch>
       </Router>
