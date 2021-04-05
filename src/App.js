@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Store } from "./store";
 import "./App.css";
 import Navbar from './components/Navbar';
+import HomePage from './pages/Home';
 
 function App() {
   const [data, setData] = useState({
@@ -21,8 +22,11 @@ function App() {
           <Route path="/about">
             <div>Nosotros</div>
           </Route>
+          <Route path="/contact">
+            <div>Contacto</div>
+          </Route>
           <Route path="/">
-            <HomnePage />
+            <HomePage />
           </Route>
         </Switch>
       </Router>

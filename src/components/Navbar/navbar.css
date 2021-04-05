@@ -1,0 +1,22 @@
+.navbar {
+    background-color: rgba(0, 0, 255, 0.384);
+    margin-top: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: fit-content;
+}
+
+.nav-link {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  
+}
+
