@@ -47,11 +47,6 @@ export default {
       },
     },
     {
-      name: 'blurb',
-      title: 'Blurb',
-      type: 'localeString',
-    },
-    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
