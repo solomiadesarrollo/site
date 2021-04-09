@@ -5,8 +5,7 @@ import "./App.css";
 import Navbar from './components/Navbar';
 import HomePage from './pages/Home';
 import Carousel from './components/Carousel/Carousel';
-import { carouselData } from './components/Carousel/carouselData';
-
+import CategoryCard from './components/CategoryCard/CategoryCard';
 
 function App() {
   const [data, setData] = useState({
@@ -21,7 +20,8 @@ function App() {
     <Store.Provider value={[data, setData]}>
       <Router>
         <Navbar />
-        <Carousel slides={carouselData}/>
+        <Carousel  />
+        <CategoryCard />
         <Switch>
           <Route path="/about">
             <div>Nosotros</div>

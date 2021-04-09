@@ -6,22 +6,23 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar">
-                <Link to="/">
-                    <img src="###" className="logo" alt="logo_solomia" />
-                </Link>
-
+                <div className="icons-container">
+                    <Link to="/">
+                        <img src="###" className="logo" alt="logo_solomia" />
+                    </Link>
+                </div>
                 <ul className="nav">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link">Home</Link>
+                        <Link to="/" className="nav-link">HOME |</Link>
                     </li>
 
                     <li className="nav-item">
 
-                        <Link to='/about' className="nav-link">Nosotros</Link>
+                        <Link to='/about' className="nav-link">CATEGORIAS</Link>
 
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link" >Contacto</Link>
+                        <Link to="/contact" className="nav-link">| NUESTRO PROYECTO</Link>
                     </li>
 
                 </ul>

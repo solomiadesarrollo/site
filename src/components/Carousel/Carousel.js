@@ -1,41 +1,59 @@
+// import React, { useState } from 'react';
 import React, { useState } from 'react';
-import { carouselData } from './carouselData';
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
-import './Carousel.css'
-
-const Carousel = ({ slides }) => {
-    const [currentPic, setCurrentPic] = useState(0)
-    const length = slides.length
-
-    const nextSlide = () => {
-        setCurrentPic(currentPic === length - 1 ? 0 : currentPic + 1)
-    }
-
-    const prevSlide = () => {
-        setCurrentPic(currentPic === 0 ? length - 1 : currentPic - 1)
-    }
+import CarouselData from "./CarouselData";
+import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
+import img3 from "../../assets/images/img3.png";
+import img4 from "../../assets/images/img4.png";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import './Carousel.css';
 
 
-    if (!Array.isArray(slides) || slides.length <= 0) {
-        return null;
-    }
+function Carousel() {
+    let carouselArr = [
+        <CarouselData src={img1} />,
+        <CarouselData src={img2} />,
+        <CarouselData src={img3} />,
+        <CarouselData src={img4} />
 
+    ];
+    const [x, setX] = useState(0)
+    const goLeft = () => {
+        x === 0 ? setX(-100 * (carouselArr.length - 1)) : setX(x + 100);
 
+    };
+    const goRight = () => {
+        x === -100 * (carouselArr.length) ? setX(0) : setX(x - 100);
+
+    };
+                   
     return (
-        <section className="slider">
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-            {carouselData.map((slide, index) => {
+        <div className="slider">
+            {carouselArr.map((item, index) => {
                 return (
-                    <div className={index === currentPic ? 'slide active' : 'slide'} key={index}>
-                        {index === currentPic && (<img src={slide.image} alt="bag" className="picture" />)}
+                    <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
+                        {item}
+
                     </div>
-
+                    
+                    
                 );
-
             })}
-        </section>
+            <button id="goLeft" onClick={goLeft}>
+                <FaChevronLeft />
+            </button>
+            <button id="goRight" onClick={goRight}>
+                <FaChevronRight />
+            </button>
+        </div>
     )
-}
 
+
+}
 export default Carousel;
+
+
+
+
+
+
