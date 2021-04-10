@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Store } from "./store";
 import "./App.css";
-import Navbar from './components/Navbar';
-import HomePage from './pages/Home';
+import Navbar from './components/Navbar/Navbar';
+import HomePage from './pages/HomePage';
 import Carousel from './components/Carousel/Carousel';
 import CategoryCard from './components/CategoryCard/CategoryCard';
 
