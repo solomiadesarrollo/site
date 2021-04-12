@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Store } from "./store";
 import "./App.css";
-import Navbar from './components/Navbar/Navbar';
-import HomePage from './pages/HomePage';
-import Carousel from './components/Carousel/Carousel';
-import CategoryCard from './components/CategoryCard/CategoryCard';
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./pages/HomePage";
+import CategoryPage from "./pages/CategoryPage";
 
 function App() {
   const [data, setData] = useState({
@@ -20,11 +19,12 @@ function App() {
     <Store.Provider value={[data, setData]}>
       <Router>
         <Navbar />
-        <Carousel  />
-        <CategoryCard />
         <Switch>
           <Route path="/about">
             <div>Nosotros</div>
+          </Route>
+          <Route path="/categoria/:slug">
+            <CategoryPage />
           </Route>
           <Route path="/contact">
             <div>Contacto</div>

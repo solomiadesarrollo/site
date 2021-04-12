@@ -1,0 +1,30 @@
+.productcard-container {
+    height: 606px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productcard-img {
+    width: 400px;
+    height: 500px;
+}
+
+.productcard-title{
+    font-size: 16px;
+    margin: 12px;
+}
+
+.productcard-price{
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+
+.productcard-color-variant{
+    background-color: grey;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
