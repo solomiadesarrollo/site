@@ -1,4 +1,3 @@
-import React from 'react';
 
 function CarouselData({ src }) {
     return (
