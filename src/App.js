@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Store } from "./store";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   const [data, setData] = useState({
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/categoria/:slug">
             <CategoryPage />
+          </Route>
+          <Route path="/producto/:slug">
+            <ProductPage />
           </Route>
           <Route path="/contact">
             <div>Contacto</div>

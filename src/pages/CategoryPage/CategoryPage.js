@@ -19,7 +19,6 @@ const CategoryPage = () => {
   const [category, setCategory] = useState("");
 
   useEffect(() => {
-    console.log(slug);
     sanityClient
       .fetch(
         `*[_type=="category" && slug.current=="${slug}" ]{
@@ -35,6 +34,7 @@ const CategoryPage = () => {
           let firstImg = product.defaultProductVariant.images[0];
           return {
             title: product.title,
+            slug: product.slug,
             price: product.defaultProductVariant.price,
             imgUrl: urlFor(firstImg).url(),
           };
@@ -50,6 +50,7 @@ const CategoryPage = () => {
       </div>
       <div className="category-prods-container">
         {products.map((item) => {
+          console.log(item);
           return (
             <>
               <div>
@@ -57,6 +58,7 @@ const CategoryPage = () => {
                   title={item.title}
                   imgUrl={item.imgUrl}
                   price={item.price}
+                  slug={item.slug.current}
                 />
               </div>
             </>

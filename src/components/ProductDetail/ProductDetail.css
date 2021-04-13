@@ -1,0 +1,31 @@
+.productdetail-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.productdetail-img{
+    height: 800px;
+    width: 505px;
+}
+
+.productdetail-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 4px solid #03BFC0;
+}
+
+.productdetail-buttons {
+    margin-top: auto;
+    margin-bottom: 17px;
+}
+
+
+.productdetail-buttons button{
+    border: none;
+    background: none;
+}
