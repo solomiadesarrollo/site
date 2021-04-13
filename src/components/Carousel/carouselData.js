@@ -1,6 +1,6 @@
 import React from 'react';
 
-function carouselData({ src }) {
+function CarouselData({ src }) {
     return (
         <div>
         <img src={src} alt="slide-img" className="img-styles">
@@ -15,7 +15,7 @@ function carouselData({ src }) {
 
 }
 
-export default carouselData;
+export default CarouselData;
 
 
 
