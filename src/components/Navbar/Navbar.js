@@ -3,13 +3,13 @@ import logo from '../../assets/icons/logo.svg';
 import phone_icon from '../../assets/icons/phone_icon.svg';
 import ig_icon from '../../assets/icons/ig_icon.svg';
 import google_icon from '../../assets/icons/google_icon.svg';
-import line from '../../assets/icons/line.png';
+import line from '../../assets/icons/line.svg';
 import React from "react";
-import ReactNavbar from "react-responsive-animate-navbar";
 
 import "./Navbar.css"
 
 const Navbar = () => {
+    
 
     return (
 

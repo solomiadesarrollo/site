@@ -7,7 +7,7 @@
 
   /* Claro (Blanco) */
 
-  background: #ffffff;
+  background:#030315;;
   mix-blend-mode: normal;
   /* Sombra inf */
 
@@ -22,8 +22,8 @@
   top: 9px;
 
   /* Claro (Blanco) */
-
-  background: #ffffff;
+ background:#030315;
+ 
 }
 .nav-item {
   list-style: none;
@@ -37,7 +37,7 @@
   line-height: 157.33%;
   text-transform: uppercase;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .nav-link-home {
@@ -85,6 +85,7 @@
   width: 25px;
   height: 25px;
   left: calc(10%);
+  
 }
 .navbar-icon2 {
   position: absolute;
@@ -105,6 +106,7 @@
   left: 680px;
   top: 30%;
   bottom: 67.11%;
+
 
   /* Negro SM */
 }

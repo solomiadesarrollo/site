@@ -1,6 +1,31 @@
+.title-container {
+  position: relative;
+  width: auto;
+  height: 198px;
+  top: 136px;
+  background-color: rgb(116, 114, 114);
+}
+.category-container {
+  position: absolute;
+  width: auto;
+  height: 610px;
+  left: 101px;
+  top: 300px;
+}
 .category-section-title {
-    font-size: 56px;
-    text-align: center;
-    text-transform: uppercase;
-   
+  position: absolute;
+  width: 839px;
+  height: 85px;
+  left: calc(50% - 639px / 2 + 0.5px);
+  top: calc(50% - 200px / 2 - 0.5px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+
+  /* Princ 3 */
+
+  color: rgb(3, 3, 21);
 }

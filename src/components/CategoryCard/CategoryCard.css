@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 25px;
+ 
 }
 
 .category-image-container {
@@ -12,6 +13,7 @@
   width: 400px;
   height: 433px;
   background-color: black;
+  
 }
 .category-title {
   list-style: none;
