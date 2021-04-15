@@ -1,19 +1,19 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import img5 from '../../assets/images/img5.png';
+import { Link } from 'react-router-dom';
 import './CategoryCard.css';
 
-function categoryCard({categoryName, bgImage}) {
-    return(
-        <div className="card-container">
-            <div className="image-container">
-                <img src={img5} alt="category"></img>
-                <Link to="/" className="btn btn-category"><h2>categoryName</h2></Link>
+function categoryCard({ title, image, slug }) {
+    return (
+        <div className="category-image-container">
 
-            </div>
-            
+            <img src={image} alt="category"></img>
+            <Link to={`/categoria/${slug}`}><h3 className="category-title">{title}</h3></Link>
 
         </div>
+
+
+
+
     )
 
 }

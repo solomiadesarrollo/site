@@ -1,8 +1,12 @@
+import CategoryList from "../../components/CategoryList"
+
+
 const Home = () => {
 
     return(
         <div>
-            HOME
+            
+            <CategoryList />
         </div>
     )
 }
