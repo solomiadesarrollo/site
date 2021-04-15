@@ -36,7 +36,7 @@ const CategoryList = () => {
 
 
     return (
-        <div><h2 className="category-section-header">categorías</h2>
+        <div><h2 className="category-section-title">categorías</h2>
             <div className="category-container">
                 {categorias.map(categoria => {
 

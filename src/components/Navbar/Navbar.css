@@ -1,4 +1,133 @@
 .navbar-container {
-  background-color: lightgray;
-  height: 105px;
+  position: relative;
+  width: auto;
+  height: 76px;
+  left: 0px;
+  top: 0px;
+
+  /* Claro (Blanco) */
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  /* Sombra inf */
+
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
 }
+
+.navbar-logo {
+  position: absolute;
+  width: 359px;
+  height: 59px;
+  left: 100px;
+  top: 9px;
+
+  /* Claro (Blanco) */
+
+  background: #ffffff;
+}
+.nav-item {
+  list-style: none;
+}
+
+.text-style {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 157.33%;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.nav-link-home {
+  position: absolute;
+  width: 53px;
+  height: 25px;
+  left: calc(50% - 53px / 2 - 112.5px);
+  top: calc(50% - 25px / 2 - 0.5px);
+
+  /* Cuerpo 1 16 ps */
+}
+
+.nav-link-cat {
+  position: absolute;
+  width: 106px;
+  height: 25px;
+  left: calc(50% - 106px / 2 + 6px);
+  top: calc(50% - 25px / 2 - 0.5px);
+
+  /* Cuerpo 1 16 ps */
+}
+.nav-link-proyecto {
+  position: absolute;
+  width: 175px;
+  height: 25px;
+  left: calc(50% - 175px / 2 + 184.5px);
+  top: calc(50% - 25px / 2 - 0.5px);
+}
+.nav-link-como-comprar {
+  position: absolute;
+  width: 144px;
+  height: 25px;
+  left: calc(50% - 144px / 2 + 382px);
+  top: calc(50% - 25px / 2 - 0.5px);
+}
+.contact-container {
+  position: relative;
+  width: 105.64px;
+  height: 22.65px;
+  left: 1235px;
+  top: 26px;
+}
+.navbar-icon1 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: calc(10%);
+}
+.navbar-icon2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: calc(50%);
+}
+.navbar-icon3 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: calc(90%);
+}
+.line {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  left: 680px;
+  top: 30%;
+  bottom: 67.11%;
+
+  /* Negro SM */
+}
+
+.line2 {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  left: 830px;
+  top: 30%;
+  bottom: 67.11%;
+
+  /* Negro SM */
+}
+
+.line3 {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  left: 1040px;
+  top: 30%;
+  bottom: 67.11%;
+
+  /* Negro SM */
+}
+
