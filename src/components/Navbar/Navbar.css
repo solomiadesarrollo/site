@@ -1,9 +1,8 @@
-.navbar-container {
+.navbar__container {
   position: relative;
   width: auto;
   height: 76px;
-  left: 0px;
-  top: 0px;
+  top: -2vh;
 
   /* Claro (Blanco) */
 
@@ -14,7 +13,7 @@
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-logo {
+.navbar__logo {
   position: absolute;
   width: 359px;
   height: 59px;
@@ -25,11 +24,11 @@
  background:#030315;
  
 }
-.nav-item {
+.nav__item {
   list-style: none;
 }
 
-.text-style {
+.text__style {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -40,7 +39,7 @@
   color: white;
   text-decoration: none;
 }
-.nav-link-home {
+.nav__link--home {
   position: absolute;
   width: 53px;
   height: 25px;
@@ -50,7 +49,7 @@
   /* Cuerpo 1 16 ps */
 }
 
-.nav-link-cat {
+.nav__link--cat {
   position: absolute;
   width: 106px;
   height: 25px;
@@ -59,41 +58,41 @@
 
   /* Cuerpo 1 16 ps */
 }
-.nav-link-proyecto {
+.nav__link--proyecto {
   position: absolute;
   width: 175px;
   height: 25px;
   left: calc(50% - 175px / 2 + 184.5px);
   top: calc(50% - 25px / 2 - 0.5px);
 }
-.nav-link-como-comprar {
+.nav__link--como--comprar {
   position: absolute;
   width: 144px;
   height: 25px;
   left: calc(50% - 144px / 2 + 382px);
   top: calc(50% - 25px / 2 - 0.5px);
 }
-.contact-container {
+.contact__container {
   position: relative;
   width: 105.64px;
   height: 22.65px;
   left: 1235px;
   top: 26px;
 }
-.navbar-icon1 {
+.navbar__icon--1 {
   position: absolute;
   width: 25px;
   height: 25px;
   left: calc(10%);
   
 }
-.navbar-icon2 {
+.navbar__icon--2 {
   position: absolute;
   width: 25px;
   height: 25px;
   left: calc(50%);
 }
-.navbar-icon3 {
+.navbar__icon--3 {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -111,7 +110,7 @@
   /* Negro SM */
 }
 
-.line2 {
+.line__2 {
   position: absolute;
   width: 3px;
   height: 30px;
@@ -122,7 +121,7 @@
   /* Negro SM */
 }
 
-.line3 {
+.line__3 {
   position: absolute;
   width: 3px;
   height: 30px;
