@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const [data, setData] = useState({
@@ -23,7 +24,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/about">
-            <div>Nosotros</div>
+            <AboutPage />
           </Route>
           <Route path="/categoria/:slug">
             <CategoryPage />
@@ -37,7 +38,7 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
-        </Switch>        
+        </Switch>      
         <Footer />
       </Router>
     </Store.Provider>
