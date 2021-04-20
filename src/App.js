@@ -7,8 +7,7 @@ import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import Footer from './components/Footer/Footer';
-import AboutUs from './components/AboutUs/AboutUs';
-import BrandFeatures from './components/BrandFeatures/BrandFeatures';
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const [data, setData] = useState({
@@ -25,7 +24,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/about">
-            <div>Nosotros</div>
+            <AboutPage />
           </Route>
           <Route path="/categoria/:slug">
             <CategoryPage />
@@ -39,10 +38,8 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
-        </Switch>        
+        </Switch>      
         <Footer />
-        <AboutUs />
-        <BrandFeatures />
       </Router>
     </Store.Provider>
   );

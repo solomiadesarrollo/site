@@ -2,33 +2,33 @@
     background-color: transparent;
     display: flex;
     flex-flow: row nowrap;
-    height: 360px;
-    justify-content: space-between;
-    margin: 60px auto;
+    height: 22.5rem;
+    justify-content: space-around;
+    margin: 7rem auto;
     padding: 0;
-    width: 1240px;
+    width: 80vw;
 }
 
 .brandFeatures__cards{
     align-items: center;
     background: #C5DADA;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
 
 .brandFeatures__images{
-    height: 150px;
-    width: 150px;
+    height: 40%;
+    width: 40%;
 }
 
 .brandFeatures__paragraph{
     text-align: center;
     font-family: Montserrat, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
-    line-height: 29px;
-    width: 385.26px;
+    line-height: 1.8125rem;
+    width: 24.0787rem;
 }
