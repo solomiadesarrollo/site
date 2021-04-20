@@ -6,7 +6,9 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+import AboutUs from './components/AboutUs/AboutUs';
+import BrandFeatures from './components/BrandFeatures/BrandFeatures';
 
 function App() {
   const [data, setData] = useState({
@@ -39,6 +41,8 @@ function App() {
           </Route>
         </Switch>        
         <Footer />
+        <AboutUs />
+        <BrandFeatures />
       </Router>
     </Store.Provider>
   );
