@@ -1,4 +1,3 @@
-
 function CarouselData({ src }) {
     return (
         <div>

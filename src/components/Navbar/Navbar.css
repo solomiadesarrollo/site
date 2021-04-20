@@ -1,28 +1,35 @@
 .navbar__container {
   position: relative;
   width: auto;
-  height: 76px;
-  top: -2vh;
+  height: 5rem;
+  top: -2.1vh;
 
   /* Claro (Blanco) */
 
-  background:#030315;;
+  background: #030315;
   mix-blend-mode: normal;
   /* Sombra inf */
 
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.items__container {
+  position: absolute;
+  width: auto;
+  height: 2rem;
+  top: 4vh;
+  left: 50%;
 }
 
 .navbar__logo {
   position: absolute;
-  width: 359px;
-  height: 59px;
-  left: 100px;
-  top: 9px;
+  width: 22.5rem;
+  height: 3.6rem;
+  left: 5rem;
+  top: 1rem;
 
   /* Claro (Blanco) */
- background:#030315;
- 
+  background: #030315;
 }
 .nav__item {
   list-style: none;
@@ -32,8 +39,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 157.33%;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -41,81 +47,79 @@
 }
 .nav__link--home {
   position: absolute;
-  width: 53px;
-  height: 25px;
-  left: calc(50% - 53px / 2 - 112.5px);
-  top: calc(50% - 25px / 2 - 0.5px);
+  width: 3rem;
+  height: 1.5rem;
+  left: calc(50% - 16.5rem / 2 - 7rem);
+  top: calc(50% - 1rem / 2 - 0.03rem);
 
   /* Cuerpo 1 16 ps */
 }
 
 .nav__link--cat {
   position: absolute;
-  width: 106px;
-  height: 25px;
-  left: calc(50% - 106px / 2 + 6px);
-  top: calc(50% - 25px / 2 - 0.5px);
+  width: 6rem;
+  height: 1.5rem;
+  left: calc(50% - 19.5rem / 2 + 0.3rem);
+  top: calc(50% - 1rem / 2 - 0.03rem);
 
   /* Cuerpo 1 16 ps */
 }
 .nav__link--proyecto {
   position: absolute;
-  width: 175px;
-  height: 25px;
-  left: calc(50% - 175px / 2 + 184.5px);
-  top: calc(50% - 25px / 2 - 0.5px);
+  width: 10.5rem;
+  height: 1.5rem;
+  left: calc(50% - 23.5rem / 2 + 11.5rem);
+  top: calc(50% - 1rem / 2 - 0.03rem);
 }
 .nav__link--como--comprar {
   position: absolute;
-  width: 144px;
-  height: 25px;
-  left: calc(50% - 144px / 2 + 382px);
-  top: calc(50% - 25px / 2 - 0.5px);
+  width: 10rem;
+  height: 1.5rem;
+  left: calc(50% - 25rem / 2 + 23.8rem);
+  top: calc(50% - 1rem / 2 - 0.03rem);
 }
 .contact__container {
   position: relative;
-  width: 105.64px;
-  height: 22.65px;
-  left: 1235px;
-  top: 26px;
+  width: 6.6rem;
+  height: 1.41rem;
+  left: 85rem;
+  top: 2.3rem;
 }
 .navbar__icon--1 {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   left: calc(10%);
-  
 }
 .navbar__icon--2 {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   left: calc(50%);
 }
 .navbar__icon--3 {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   left: calc(90%);
 }
 .line {
   position: absolute;
-  width: 3px;
-  height: 30px;
-  left: 680px;
-  top: 30%;
-  bottom: 67.11%;
-
+  width: 0.8rem;
+  height: 2rem;
+  left: 4.1rem;
+  top: -20%;
+  bottom: 37.11%;
 
   /* Negro SM */
 }
 
 .line__2 {
   position: absolute;
-  width: 3px;
-  height: 30px;
-  left: 830px;
-  top: 30%;
+  width: 0.8rem;
+  height: 2rem;
+  left: 7.5rem;
+  top: -20%;
   bottom: 67.11%;
 
   /* Negro SM */
@@ -123,12 +127,11 @@
 
 .line__3 {
   position: absolute;
-  width: 3px;
-  height: 30px;
-  left: 1040px;
-  top: 30%;
+  width: 0.8rem;
+  height: 2rem;
+  left: 11rem;
+  top: -20%;
   bottom: 67.11%;
 
   /* Negro SM */
 }
-

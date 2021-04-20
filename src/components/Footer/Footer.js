@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import phone_icon from "../../assets/icons/phone_icon.svg"
+import whatsapp_icon from "../../assets/icons/whatsapp_icon.svg"
 import ig_icon from "../../assets/icons/ig_icon.svg"
 import google_icon from "../../assets/icons/google_icon.svg"
 import logo from "../../assets/icons/logo2.svg"
@@ -27,7 +27,7 @@ function Footer() {
             <div className="footer__element">
                 <h2>Seguinos</h2>
                 <div className="footer__elementBody footer__elementBody--redes">
-                    <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={phone_icon} alt="phone"></img></Link>
+                    <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={whatsapp_icon} alt="phone"></img></Link>
                     <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={ig_icon} alt="instagram"></img></Link>
                     <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={google_icon} alt="google"></img></Link>
                 </div>

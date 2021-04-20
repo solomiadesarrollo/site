@@ -1,15 +1,16 @@
+import React from "react";
 import { Link } from 'react-router-dom';
 import logo from '../../assets/icons/logo.svg';
-import phone_icon from '../../assets/icons/phone_icon.svg';
+import whatsapp_icon from '../../assets/icons/whatsapp_icon.svg';
 import ig_icon from '../../assets/icons/ig_icon.svg';
 import google_icon from '../../assets/icons/google_icon.svg';
 import line from '../../assets/icons/line.svg';
-import React from "react";
+
 
 import "./Navbar.css"
 
 const Navbar = () => {
-    
+
 
     return (
 
@@ -17,42 +18,47 @@ const Navbar = () => {
             <Link to="/">
                 <img src={logo} className="navbar__logo" alt="logo" />
             </Link>
-            <ul>
-                <li className="nav__item">
+            <div className="items__container">
+                <ul>
+                    <li className="nav__item">
 
-                    <Link to="/" className="nav__link--home text__style active">
-                        Home
+                        <Link to="/" className="nav__link--home text__style active">
+                            Home
+                        
+                        <img className="line" src={line} alt="line"></img>
                         </Link>
-                        <img className="line" src={line}></img>
-                </li>
-                
-                <li className="nav__item">
+                    </li>
 
-                    <Link to="/" className="nav__link--cat text__style active">
-                        Categorias
+                    <li className="nav__item">
+
+                        <Link to="/" className="nav__link--cat text__style active">
+                            Categorias
+                        
+                        <img className="line__2" src={line} alt="line"></img>
                         </Link>
-                        <img className="line__2" src={line}></img>
-                </li>
-                <li className="nav__item">
+                    </li>
+                    <li className="nav__item">
 
-                    <Link to="/" className="nav__link--proyecto text__style active">
-                        Nuestro Proyecto
+                        <Link to="/" className="nav__link--proyecto text__style active">
+                            Nuestro Proyecto
+                        
+                        <img className="line__3" src={line} alt="line"></img>
                         </Link>
-                        <img className="line__3" src={line}></img>
-                </li>
-                <li className="nav__item">
+                    </li>
+                    <li className="nav__item">
 
-                    <Link to="/" className="nav__link--como--comprar text__style active">
-                        cómo comprar
+                        <Link to="/" className="nav__link--como--comprar text__style active">
+                            cómo comprar
                         </Link>
 
-                </li>
-                
+                    </li>
 
-            </ul>
+
+                </ul>
+            </div>
             <div className="contact__container">
                 <Link to="/">
-                    <img src={phone_icon} className="navbar__icon--1" alt="phone icon" />
+                    <img src={whatsapp_icon} className="navbar__icon--1" alt="phone icon" />
                 </Link>
                 <Link to="/">
                     <img src={ig_icon} className="navbar__icon--2" alt="instagram icon" />
