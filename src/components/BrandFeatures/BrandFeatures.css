@@ -10,12 +10,12 @@
 }
 
 .brandFeatures__cards{
+    align-items: center;
     background: #C5DADA;
     border-radius: 15px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .brandFeatures__images{
@@ -24,11 +24,11 @@
 }
 
 .brandFeatures__paragraph{
+    text-align: center;
     font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: bold;
     line-height: 29px;
-    text-align: center;
     width: 385.26px;
 }
