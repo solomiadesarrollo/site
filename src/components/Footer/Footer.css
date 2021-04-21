@@ -1,12 +1,10 @@
 .footer{
     background-color: black;
-    bottom: -100vh;
     color: white;
     display: flex;
     flex-flow: row nowrap;
     height: 15rem;
     justify-content: center;
-    position: absolute;
     width: 100%;
 }
 

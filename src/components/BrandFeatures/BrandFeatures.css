@@ -1,0 +1,34 @@
+.brandFeatures{
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 22.5rem;
+    justify-content: space-around;
+    margin: 7rem auto;
+    padding: 0;
+    width: 80vw;
+}
+
+.brandFeatures__cards{
+    align-items: center;
+    background: #C5DADA;
+    border-radius: 0.9375rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.brandFeatures__images{
+    height: 40%;
+    width: 40%;
+}
+
+.brandFeatures__paragraph{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.8125rem;
+    width: 24.0787rem;
+}

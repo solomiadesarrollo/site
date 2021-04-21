@@ -13,36 +13,36 @@ const Navbar = () => {
 
     return (
 
-        <nav className="navbar-container">
+        <nav className="navbar__container">
             <Link to="/">
-                <img src={logo} className="navbar-logo" alt="logo" />
+                <img src={logo} className="navbar__logo" alt="logo" />
             </Link>
             <ul>
-                <li className="nav-item">
+                <li className="nav__item">
 
-                    <Link to="/" className="nav-link-home text-style active">
+                    <Link to="/" className="nav__link--home text__style active">
                         Home
                         </Link>
                         <img className="line" src={line}></img>
                 </li>
                 
-                <li className="nav-item">
+                <li className="nav__item">
 
-                    <Link to="/" className="nav-link-cat text-style active">
+                    <Link to="/" className="nav__link--cat text__style active">
                         Categorias
                         </Link>
-                        <img className="line2" src={line}></img>
+                        <img className="line__2" src={line}></img>
                 </li>
-                <li className="nav-item">
+                <li className="nav__item">
 
-                    <Link to="/" className="nav-link-proyecto text-style active">
+                    <Link to="/" className="nav__link--proyecto text__style active">
                         Nuestro Proyecto
                         </Link>
-                        <img className="line3" src={line}></img>
+                        <img className="line__3" src={line}></img>
                 </li>
-                <li className="nav-item">
+                <li className="nav__item">
 
-                    <Link to="/" className="nav-link-como-comprar text-style active">
+                    <Link to="/" className="nav__link--como--comprar text__style active">
                         cómo comprar
                         </Link>
 
@@ -50,15 +50,15 @@ const Navbar = () => {
                 
 
             </ul>
-            <div className="contact-container">
+            <div className="contact__container">
                 <Link to="/">
-                    <img src={phone_icon} className="navbar-icon1" alt="phone icon" />
+                    <img src={phone_icon} className="navbar__icon--1" alt="phone icon" />
                 </Link>
                 <Link to="/">
-                    <img src={ig_icon} className="navbar-icon2" alt="instagram icon" />
+                    <img src={ig_icon} className="navbar__icon--2" alt="instagram icon" />
                 </Link>
                 <Link to="/">
-                    <img src={google_icon} className="navbar-icon3" alt="google icon" />
+                    <img src={google_icon} className="navbar__icon--3" alt="google icon" />
                 </Link>
 
             </div>
