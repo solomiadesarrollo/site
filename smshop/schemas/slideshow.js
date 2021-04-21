@@ -1,6 +1,6 @@
 export default {
-  name: "category",
-  title: "Category",
+  name: "slideshow",
+  title: "Slideshow",
   type: "document",
   fields: [
     {
@@ -21,11 +21,6 @@ export default {
       name: "description",
       title: "Description",
       type: "text",
-    },
-    {
-      title: "Muestra artículos destacados?",
-      name: "featured",
-      type: "boolean",
     },
     {
       title: "Image",
