@@ -3,12 +3,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    
 }
 
 
 .productdetail-img{
     height: 800px;
     width: 505px;
+    
 }
 
 .productdetail-header{
