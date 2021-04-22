@@ -23,6 +23,11 @@ export default {
       },
     },
     {
+      title: 'Active?',
+      name: 'active',
+      type: 'boolean'
+    },
+    {
       title: "Default variant",
       name: "defaultProductVariant",
       type: "productVariant",

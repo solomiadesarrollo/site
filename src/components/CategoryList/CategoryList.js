@@ -10,7 +10,7 @@ const CategoryList = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type=="category" ]{
+        `*[_type=="category" && featured!=true]{
                 title,
                 slug,
                 image
