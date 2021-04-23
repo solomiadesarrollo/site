@@ -1,0 +1,30 @@
+.product__card-container {
+  position: relative;
+  width: 25.3rem;
+  height: 35.7rem;
+}
+
+.productcard__img {
+  position: absolute;
+  width: 25rem;
+  height: 31rem;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+.product__card-title {
+  position: relative;
+  top: 90.56%;
+  bottom: 0.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+.product__card-price {
+  position: relative;
+  top: 90%;
+  font-size: 1.3rem;  /* or 25px */
+  display: flex;
+  justify-content: center;
+  color: rgb(1, 89, 90);
+}

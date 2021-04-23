@@ -1,7 +1,7 @@
-function CarouselData({ src }) {
+function CarouselData({ image }) {
     return (
         <div>
-        <img src={src} alt="slide_img" className="img__styles">
+        <img src={image} alt="slide_img" className="img__styles">
         </img>
         </div>
 

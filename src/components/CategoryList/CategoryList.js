@@ -30,9 +30,13 @@ const CategoryList = () => {
   }, []);
 
   return (
-    <div className="title__container">
-      <h2 className="category__section-title">categorías</h2>
-      <div className="category-container">
+    <>
+
+      <div className="title__container">
+        <h1 className="category__title">categorias</h1>
+      </div>
+      <div className="category-list-container">
+
         {categorias.map((categoria) => {
           return (
             <CategoryCard
@@ -42,8 +46,10 @@ const CategoryList = () => {
             />
           );
         })}
+
       </div>
-    </div>
+    </>
+
   );
 };
 

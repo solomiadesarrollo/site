@@ -2,23 +2,16 @@
   position: relative;
   width: auto;
   height: 12.5rem;
-  top: 8.5rem;
+  top: 10rem; 
   background-color: rgb(199, 199, 202);
+ 
 }
-.category-container {
+.category__title {
   position: absolute;
   width: auto;
-  height: 12rem;
-  left: 4rem;
-  top: 18.5rem;
-}
-.category__section-title {
-  position: absolute;
-  width: 10rem;
   height: 5.3rem;
   left: calc(50% - 40rem / 2 + 0.03rem);
   top: calc(50% - 14rem / 2 - 0.03rem);
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -26,4 +19,13 @@
   text-transform: uppercase;
 
   color: rgb(3, 3, 21);
+}
+
+/* ojo, verificar medidas  */
+.category-list-container {
+  position: relative;
+  display: flex;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
 }
