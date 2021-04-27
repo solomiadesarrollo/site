@@ -1,59 +1,57 @@
-// import React, { useState } from 'react';
-import React, { useState } from 'react';
-import CarouselData from "./CarouselData";
-// import img1 from "../../assets/images/img1.jpg";
-// import img2 from "../../assets/images/img2.png";
-// import img3 from "../../assets/images/img3.png";
-// import img4 from "../../assets/images/img4.png";
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import './Carousel.css';
+import React, { useState, useEffect } from "react";
+import sanityClient from "../../client";
+import { urlFor } from "../../utils/images.js";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Carousel.css";
 
+const Carousel = () => {
+  const [slides, setSlides] = useState([]);
 
-function Carousel() {
-    let carouselArr = [
-        <CarouselData src={"#"} />,
-        <CarouselData src={"#"} />,
-        <CarouselData src={"#"} />,
-        <CarouselData src={"#"} />
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type=="slideshow"]{
+                  title,
+                  description,
+                  image
+              }
+              `
+      )
+      .then((data) => {
+        let imagenes = data.map((sli) => {
+          return {
+            title: sli.title,
+            slug: sli.slug,
+            image: urlFor(sli.image).url(),
+          };
+        });
+        setSlides(imagenes);
+      });
+  }, []);
 
-    ];
-    const [x, setX] = useState(0)
-    const goLeft = () => {
-        x === 0 ? setX(-100 * (carouselArr.length - 1)) : setX(x + 100);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
 
-    };
-    const goRight = () => {
-        x === -100 * (carouselArr.length) ? setX(0) : setX(x - 100);
-
-    };
-                   
-    return (
-        <div className="slider">
-            {carouselArr.map((item, index) => {
-                return (
-                    <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
-                        {item}
-
-                    </div>
-                    
-                    
-                );
-            })}
-            <button id="goLeft" onClick={goLeft}>
-                <FaChevronLeft />
-            </button>
-            <button id="goRight" onClick={goRight}>
-                <FaChevronRight />
-            </button>
-        </div>
-    )
-
-
-}
+  return (
+    <Slider {...settings}>
+      {slides.map((slide) => {
+        return (
+          <div>
+            {/* {slide.description} */}
+            <img src={slide.image} />
+          </div>
+        );
+      })}
+    </Slider>
+  );
+};
 export default Carousel;
-
-
-
-
-
-

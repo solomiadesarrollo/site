@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
 import whatsapp_icon from "../../assets/icons/whatsapp_icon.svg";
 import ig_icon from "../../assets/icons/ig_icon.svg";
-import google_icon from "../../assets/icons/google_icon.svg";
+
 import line from "../../assets/icons/line.svg";
 
 import "./Navbar.css";
