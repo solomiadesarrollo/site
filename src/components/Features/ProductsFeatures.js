@@ -36,26 +36,25 @@ const ProductsFeatures = () => {
   return (
     <>
       <div className="title__features-container">
-        <h4 className="features__title">destacados</h4>
-      </div>
+        <h2 className="features__title">destacados</h2>
+        <div className="category-container">
 
-      <div className="category-container">
-
-        {products.map((item) => {
-          console.log(item);
-          return (
-            
-              <div>
-                <FeaturesCard
-                  title={item.title}
-                  imgUrl={item.imgUrl}
-                  price={item.price}
-                  slug={item.slug.current}
-                />
-              </div>
-            
-          );
-        })}
+          {products.map((item) => {
+            console.log(item);
+            return (
+              
+                <div>
+                  <FeaturesCard
+                    title={item.title}
+                    imgUrl={item.imgUrl}
+                    price={item.price}
+                    slug={item.slug.current}
+                  />
+                </div>
+              
+            );
+          })}
+        </div>
       </div>
     </>
 
