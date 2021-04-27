@@ -1,31 +1,21 @@
 .title__container {
-  position: relative;
-  width: auto;
-  height: 12.5rem;
-  top: 10rem; 
   background-color: rgb(199, 199, 202);
- 
+  padding: 3rem;
+  text-align: center; 
 }
 .category__title {
-  position: absolute;
-  width: auto;
-  height: 5.3rem;
-  left: calc(50% - 40rem / 2 + 0.03rem);
-  top: calc(50% - 14rem / 2 - 0.03rem);
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
-
   color: rgb(3, 3, 21);
+  margin: 0
 }
 
-/* ojo, verificar medidas  */
+
 .category-list-container {
-  position: relative;
   display: flex;
-  top: 50%;
   justify-content: center;
   align-items: center;
 }

@@ -1,36 +1,38 @@
 .navbar__container {
-  position: relative;
-  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   height: 5rem;
-  top: -2.1vh;
-
-  /* Claro (Blanco) */
-
   background: #030315;
   mix-blend-mode: normal;
-  /* Sombra inf */
-
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
 .items__container {
-  position: absolute;
-  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
   height: 2rem;
-  top: 4vh;
-  left: 50%;
+  width: 70%;
 }
 
 .navbar__logo {
-  position: absolute;
   width: 22.5rem;
   height: 3.6rem;
-  left: 5rem;
-  top: 1rem;
-
-  /* Claro (Blanco) */
   background: #030315;
+  margin-left: 2rem
 }
+
+.nav__list{  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 60%;
+}
+
 .nav__item {
   list-style: none;
 }
@@ -39,99 +41,29 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
   color: white;
   text-decoration: none;
 }
-.nav__link--home {
-  position: absolute;
+.nav__link {
   width: 3rem;
   height: 1.5rem;
-  left: calc(50% - 16.5rem / 2 - 7rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-
-  /* Cuerpo 1 16 ps */
 }
 
-.nav__link--cat {
-  position: absolute;
-  width: 6rem;
-  height: 1.5rem;
-  left: calc(50% - 19.5rem / 2 + 0.3rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-
-  /* Cuerpo 1 16 ps */
-}
-.nav__link--proyecto {
-  position: absolute;
-  width: 10.5rem;
-  height: 1.5rem;
-  left: calc(50% - 23.5rem / 2 + 11.5rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-}
-.nav__link--como--comprar {
-  position: absolute;
-  width: 10rem;
-  height: 1.5rem;
-  left: calc(50% - 25rem / 2 + 23.8rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-}
 .contact__container {
-  position: relative;
-  width: 6.6rem;
+  min-width: 6.6rem;
   height: 1.41rem;
-  left: 85rem;
-  top: 2.3rem;
+  margin: 0 1.5rem;
 }
-.navbar__icon--1 {
-  position: absolute;
+.navbar__icon {
   width: 1.5rem;
   height: 1.5rem;
-  left: calc(10%);
+  margin: 0 .5rem;
 }
-.navbar__icon--2 {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: calc(50%);
-}
-.navbar__icon--3 {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: calc(90%);
-}
-.line {
-  position: absolute;
+
+.nav__line {
   width: 0.8rem;
-  height: 2rem;
-  left: 4.1rem;
-  top: -20%;
-  bottom: 37.11%;
-
-  /* Negro SM */
-}
-
-.line__2 {
-  position: absolute;
-  width: 0.8rem;
-  height: 2rem;
-  left: 7.5rem;
-  top: -20%;
-  bottom: 67.11%;
-
-  /* Negro SM */
-}
-
-.line__3 {
-  position: absolute;
-  width: 0.8rem;
-  height: 2rem;
-  left: 11rem;
-  top: -20%;
-  bottom: 67.11%;
-
-  /* Negro SM */
+  height: 1.9rem;
 }

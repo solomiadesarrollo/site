@@ -1,33 +1,19 @@
 .title__features-container {
-  position: relative;
-  width: auto;
-  height: 6.75rem;
-  top: 1.5rem;
   background-color: transparent;
-  margin:  5.5rem 0 5.5rem 0;
+  margin:  5.5rem 0;
 }
 .features__title {
- position: absolute;
- margin: 0;
- width: auto;
- height: 4.25rem;
- font-size: 3.5rem;
- display: flex;
- justify-content: center;
- align-items: center;
- text-transform: uppercase;
- left: calc(50% - 23rem/2 - 0.03rem);
- top: calc(50% - 4.25rem/2 0.03rem);
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
 
  }
 
 .category-container {
-  position: relative;
-  top: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  gap:1.5rem;
   justify-content: center;
-  align-items: center;
-  
-  
 }
 
 

@@ -1,13 +1,11 @@
 .footer{
     background-color: black;
-    position: absolute;
     color: white;
     display: flex;
     flex-flow: row nowrap;
     height: 15rem;
     justify-content: center;
     width: 100%;
-    top: 235rem;
     
 }
 
@@ -26,7 +24,14 @@
 
 .footer__elementBody--redes{
     display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer__link--redes{
+    display: flex;
     flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
 }
 
 .footer__link:visited{

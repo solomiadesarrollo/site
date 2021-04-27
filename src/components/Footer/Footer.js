@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import whatsapp_icon from "../../assets/icons/whatsapp_icon.svg"
 import ig_icon from "../../assets/icons/ig_icon.svg"
-import google_icon from "../../assets/icons/google_icon.svg"
+import facebook_icon from "../../assets/icons/facebook_icon.svg"
 import logo from "../../assets/icons/logo2.svg"
 import "./Footer.css"
 
@@ -19,7 +19,7 @@ function Footer() {
             <div className="footer__element">
                 <h2>Nosotras</h2>
                 <div>
-                    <Link className="footer__link" to="/about"><p className="footer__paragraph">Quiénes somos</p></Link>
+                    <Link className="footer__link" to="/"><p className="footer__paragraph">Quiénes somos</p></Link>
                     <Link className="footer__link" to="/"><p className="footer__paragraph">Catálogo</p></Link>
                     <Link className="footer__link" to="/"><p className="footer__paragraph">Contacto</p></Link>
                 </div>
@@ -27,9 +27,9 @@ function Footer() {
             <div className="footer__element">
                 <h2>Seguinos</h2>
                 <div className="footer__elementBody footer__elementBody--redes">
-                    <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={whatsapp_icon} alt="phone"></img></Link>
-                    <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={ig_icon} alt="instagram"></img></Link>
-                    <Link className="footer__link" to="/"><img className="footer__iconosRedes" src={google_icon} alt="google"></img></Link>
+                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={whatsapp_icon} alt="phone"></img><p className="footer__paragraph">WhatsApp</p></Link>
+                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={ig_icon} alt="instagram"></img><p className="footer__paragraph">Instagram</p></Link>
+                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={facebook_icon} alt="facebook"></img><p className="footer__paragraph">Facebook</p></Link>
                 </div>
             </div>
             <div className="footer__element footer__element--logo">

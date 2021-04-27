@@ -33,7 +33,7 @@ const CategoryList = () => {
     <>
 
       <div className="title__container">
-        <h1 className="category__title">categorias</h1>
+        <h2 className="category__title">categorias</h2>
       </div>
       <div className="category-list-container">
 

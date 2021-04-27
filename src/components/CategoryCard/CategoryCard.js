@@ -4,11 +4,13 @@ import './CategoryCard.css';
 
 function CategoryCard({ title, image, slug }) {
     return (
-        <div className="category-image-container">
-            <Link to={`/categoria/${slug}`}><h3 className="category-title">{title}</h3>
-                <img src={image} alt="category"></img>
+        <div>
+            <Link className="category-link" to={`/categoria/${slug}`}>
+                <div className="category-link-container">
+                    <img className="category-link-image" src={image} alt="category"></img>
+                    <h3 className="category-link-title">{title}</h3>
+                </div>
             </Link>
-
         </div>
 
 

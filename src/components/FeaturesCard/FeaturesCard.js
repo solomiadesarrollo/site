@@ -6,8 +6,8 @@ import './FeaturesCard.css';
 
 function CategoryCard({ title, imgUrl, slug, price }) {
     return (
-        <div className="product__card-container">
-        <Link to={`/producto/${slug}`} style={{ textDecoration: "none" }}>
+      <div className="product__card-container">
+        <Link to={`/producto/${slug}`}>
           <img src={imgUrl} className="productcard__img" alt="Product Featured" />
         </Link>
         <p className="product__card-title">{title}</p>

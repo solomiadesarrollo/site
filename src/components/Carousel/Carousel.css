@@ -1,8 +1,6 @@
 .slider {
-  position: relative;
   width: 100%;
   height: 100vh;
-  top: -2.1vh;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,7 +23,7 @@
 
 #goLeft {
   position: absolute;
-  top: 50%;
+  top: calc(50%-.5em);
   left: 0;
   transform: translate(+50%);
   font-size: 3rem;
@@ -38,7 +36,7 @@
 
 #goRight {
   position: absolute;
-  top: 50%;
+  top: calc(50%-.5em);
   right: 0;
   transform: translate(-50%);
   font-size: 3rem;
