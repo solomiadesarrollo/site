@@ -1,137 +1,26 @@
-.navbar__container {
-  position: relative;
-  width: auto;
-  height: 5rem;
-  top: -2.1vh;
-
-  /* Claro (Blanco) */
-
-  background: #030315;
-  mix-blend-mode: normal;
-  /* Sombra inf */
-
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+.navbar-container {
+  height: 105px;
+  background-color: #030315;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.items__container {
-  position: absolute;
-  width: auto;
-  height: 2rem;
-  top: 4vh;
-  left: 50%;
-}
-
-.navbar__logo {
-  position: absolute;
-  width: 22.5rem;
-  height: 3.6rem;
-  left: 5rem;
-  top: 1rem;
-
-  /* Claro (Blanco) */
-  background: #030315;
-}
-.nav__item {
-  list-style: none;
-}
-
-.text__style {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
+.navbar-menu ul {
   color: white;
-  text-decoration: none;
-}
-.nav__link--home {
-  position: absolute;
-  width: 3rem;
-  height: 1.5rem;
-  left: calc(50% - 16.5rem / 2 - 7rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-
-  /* Cuerpo 1 16 ps */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
-.nav__link--cat {
-  position: absolute;
-  width: 6rem;
-  height: 1.5rem;
-  left: calc(50% - 19.5rem / 2 + 0.3rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-
-  /* Cuerpo 1 16 ps */
-}
-.nav__link--proyecto {
-  position: absolute;
-  width: 10.5rem;
-  height: 1.5rem;
-  left: calc(50% - 23.5rem / 2 + 11.5rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-}
-.nav__link--como--comprar {
-  position: absolute;
-  width: 10rem;
-  height: 1.5rem;
-  left: calc(50% - 25rem / 2 + 23.8rem);
-  top: calc(50% - 1rem / 2 - 0.03rem);
-}
-.contact__container {
-  position: relative;
-  width: 6.6rem;
-  height: 1.41rem;
-  left: 85rem;
-  top: 2.3rem;
-}
-.navbar__icon--1 {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: calc(10%);
-}
-.navbar__icon--2 {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: calc(50%);
-}
-.navbar__icon--3 {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: calc(90%);
-}
-.line {
-  position: absolute;
-  width: 0.8rem;
-  height: 2rem;
-  left: 4.1rem;
-  top: -20%;
-  bottom: 37.11%;
-
-  /* Negro SM */
-}
-
-.line__2 {
-  position: absolute;
-  width: 0.8rem;
-  height: 2rem;
-  left: 7.5rem;
-  top: -20%;
-  bottom: 67.11%;
-
-  /* Negro SM */
-}
-
-.line__3 {
-  position: absolute;
-  width: 0.8rem;
-  height: 2rem;
-  left: 11rem;
-  top: -20%;
-  bottom: 67.11%;
-
-  /* Negro SM */
+.navbar-social ul {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }

@@ -7,10 +7,10 @@ const Home = () => {
 
     return(
         <div>
-            
+{/*             
             <Carousel />
             <Features />
-            <CategoryList />
+            <CategoryList /> */}
             
            
         </div>

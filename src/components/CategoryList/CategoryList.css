@@ -23,8 +23,9 @@
 
 /* ojo, verificar medidas  */
 .category-list-container {
-  position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   top: 50%;
   justify-content: center;
   align-items: center;
