@@ -14,6 +14,16 @@ export default {
       type: "string",
     },
     {
+      name: "size",
+      title: "Size",
+      type: "string",
+    },
+    {
+      name: "cares",
+      title: "Cares",
+      type: "string",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
