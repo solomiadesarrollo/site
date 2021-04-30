@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import whatsapp_icon from "../../assets/icons/whatsapp_icon.svg"
 import ig_icon from "../../assets/icons/ig_icon.svg"
 import facebook_icon from "../../assets/icons/facebook_icon.svg"
-import logo from "../../assets/icons/logo2.svg"
+import logo from "../../assets/icons/logo.svg"
 import "./Footer.css"
 
 function Footer() {
@@ -34,8 +34,10 @@ function Footer() {
             </div>
             <div className="footer__element footer__element--logo">
                 <img src={logo} alt="enolabaires" className="footer__logo"></img>
+                <div className="footer__copyright--container">
                 <p className="footer__copyright">© 2021 ENOLA BAIRES</p>
                 <p className="footer__copyright">TODOS LOS DERECHOS RESERVADOS</p>
+                </div>
             </div>
         </footer>
     )
