@@ -50,3 +50,34 @@
   height: 90vh;
   position: absolute;
 }
+
+.slide-container {
+  position: relative;
+  height: 650px;
+  width: 100%;
+}
+
+.slide-container img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-container .slide-btn {
+  width: 400px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slide-container .slide-btn:hover {
+  background-color: black;
+}

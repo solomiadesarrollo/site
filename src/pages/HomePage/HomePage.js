@@ -11,8 +11,8 @@ const Home = () => {
         <div>            
             <Carousel />
             <Features />
-            <CategoryList />    
-            <AboutUs />
+            {/* <CategoryList />     */}
+            {/* <AboutUs /> */}
             <BrandFeatures />
         </div>
     )

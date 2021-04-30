@@ -5,9 +5,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
+import { useViewport } from "../ViewportProvider";
 
 const Carousel = () => {
   const [slides, setSlides] = useState([]);
+  const { width } = useViewport();
+
+  const breakpoint = 768;
+  const mobile = breakpoint > width;
 
   useEffect(() => {
     sanityClient
@@ -15,7 +20,8 @@ const Carousel = () => {
         `*[_type=="slideshow"]{
                   title,
                   description,
-                  image
+                  image,
+                  mobileimage
               }
               `
       )
@@ -25,6 +31,7 @@ const Carousel = () => {
             title: sli.title,
             slug: sli.slug,
             image: urlFor(sli.image).url(),
+            mobileImage: urlFor(sli.mobileimage).url(),
           };
         });
         setSlides(imagenes);
@@ -43,16 +50,24 @@ const Carousel = () => {
   };
 
   return (
-    <Slider {...settings}>
-      {slides.map((slide) => {
-        return (
-          <div>
-            {/* {slide.description} */}
-            <img src={slide.image} />
-          </div>
-        );
-      })}
-    </Slider>
+    <div className="slider-container">
+      <Slider {...settings}>
+        {slides.map((slide) => {
+          console.log(slide);
+
+          return (
+            <div class="slide-container">
+              {mobile ? (
+                <img src={slide.mobileImage} />
+              ) : (
+                <img src={slide.image} />
+              )}
+              <button class="slide-btn">SHOP NOW</button>
+            </div>
+          );
+        })}
+      </Slider>
+    </div>
   );
 };
 export default Carousel;

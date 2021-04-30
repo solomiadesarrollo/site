@@ -30,5 +30,13 @@ export default {
         hotspot: true, // <-- Defaults to false
       },
     },
+    {
+      title: "Mobile image",
+      name: "mobileimage",
+      type: "image",
+      options: {
+        hotspot: true, // <-- Defaults to false
+      },
+    }
   ],
 };
