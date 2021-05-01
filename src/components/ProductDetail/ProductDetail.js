@@ -3,7 +3,7 @@ import { ReactComponent as BackArrow } from "../../assets/icons/backarrow.svg";
 import { useHistory } from "react-router";
 import WaButton from "../WaButton";
 
-const ProductDetail = ({ title, imageUrl, price, description }) => {
+const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => {
   let history = useHistory();
   return (
     <div className="container">
@@ -21,11 +21,11 @@ const ProductDetail = ({ title, imageUrl, price, description }) => {
           </div>
           <div className="description">
             <h3 className="title">TAMAÑO</h3>
-            <p className="text">probando</p>
+            <p className="text">{size}</p>
           </div>
           <div className="description">
             <h3 className="title">CUIDADOS</h3>
-            <p className="text">Lavar a mano con agua tibia, no usar secadora. Secar al sol</p>
+            <p className="text">{cares}</p>
           </div>
           <div className="description">
             <h3 className="title">CINTAS</h3>

@@ -7,12 +7,12 @@ import BrandFeatures from '../../components/BrandFeatures/BrandFeatures';
 
 const Home = () => {
 
-    return(
-        <div>            
+    return (
+        <div>
             <Carousel />
             <Features />
-            {/* <CategoryList />     */}
-            {/* <AboutUs /> */}
+            <CategoryList />
+            <AboutUs />
             <BrandFeatures />
         </div>
     )
