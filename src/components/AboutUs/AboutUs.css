@@ -7,7 +7,7 @@
     flex-flow: column nowrap;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    height: 31.25rem;
+    min-height: 31.25rem;
     justify-content: space-evenly;
     margin: 4rem auto;
     padding: 0 5.3125rem;
@@ -21,7 +21,7 @@
     font-weight: 700;
     line-height: 4.2663rem;
     margin:0;
-    width: 31.25rem;
+    max-width: 31.25rem;
 }
 
 .aboutUs__paragraph{
@@ -30,5 +30,15 @@
     font-weight: 400;
     line-height: 1.75rem;
     margin:0;
-    width: 31.25rem;
+    max-width: 31.25rem;
 }
+
+@media (max-width: 576px) {
+    .aboutUs{
+        padding: 1rem 3rem;
+        gap: 1rem
+    }
+    .aboutUs__title{
+        font-size: 3rem;
+    }
+  }
