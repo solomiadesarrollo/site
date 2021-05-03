@@ -10,7 +10,6 @@ const ProductCard = ({ title, price, imgUrl, slug }) => {
       </Link>
       <p className="productcard-title">{title}</p>
       <p className="productcard-price">{parseCurrency(price)}</p>
-      <div className="productcard-color-variant"></div>
     </div>
   );
 };

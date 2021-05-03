@@ -1,33 +1,43 @@
 .aboutUs{
     background: black;
-    border-radius: 0.9375rem;
     color: white;
     display: flex;
     filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     min-height: 31.25rem;
-    justify-content: space-evenly;
-    margin: 4rem auto;
+    justify-content: space-around;
+    margin: 4rem 0;
     padding: 0 5.3125rem;
     position: relative;
-    width: 70vw;
+    width: 100%;
 }
 
 .aboutUs__title{
+    align-self: flex-start;
     display: inline-block;
     font-size: 3.5rem;
     font-weight: 700;
+    letter-spacing: 1rem;
     line-height: 4.2663rem;
-    margin:0;
+    margin: 6rem 0;
     max-width: 31.25rem;
 }
 
+.aboutUs__bothParagraphs{
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4rem;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
 .aboutUs__paragraph{
+    align-self: center;
     display: inline-block;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.75rem;
     margin:0;
     max-width: 31.25rem;

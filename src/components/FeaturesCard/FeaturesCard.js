@@ -8,7 +8,7 @@ function FeaturesCard({ title, imgUrl, slug, price }) {
     return (
       <div className="product__card-container">
         <Link to={`/producto/${slug}`}>
-          <img src={imgUrl} className="productcard__img" alt="Product Featured" />
+          <img src={imgUrl} className="product__card-img" alt="Product Featured" />
         </Link>
         <p className="product__card-title">{title}</p>
         <p className="product__card-price">{parseCurrency(price)}</p>
