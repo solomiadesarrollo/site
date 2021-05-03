@@ -1,0 +1,21 @@
+.product__card-container {
+    width: 25.3rem;
+    height: 35.7rem;
+  }
+  
+  .productcard__img {
+    width: 25rem;
+    height: 31rem;
+    background-color: black;
+  }
+  .product__card-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #000000;
+  }
+  .product__card-price {
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(1, 89, 90);
+  }
+  

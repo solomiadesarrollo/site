@@ -4,6 +4,7 @@ import sanityClient from "../../client";
 import ProductDetail from "../../components/ProductDetail";
 import { urlFor } from "../../utils/images"
 import { parseCurrency } from "../../utils/currency";
+import Recomended from "../../components/Recomended/Recomended";
 
 const ProductPage = () => {
   const { slug } = useParams();
@@ -16,6 +17,8 @@ const ProductPage = () => {
         `*[_type=="product" && slug.current=="${slug}" ]{
         title,
         slug,
+        size,
+        cares,
         description,
         defaultProductVariant{
             title,
@@ -31,6 +34,8 @@ const ProductPage = () => {
         let firstImg = prod[0].defaultProductVariant.images[0];
         let upadtedProd = {
           title: prod[0].title,
+          size: prod[0].size,
+          cares: prod[0].cares,
           price: parseCurrency(prod[0].defaultProductVariant.price),
           imgUrl: urlFor(firstImg).url(),
           description: prod[0].description
@@ -46,7 +51,11 @@ const ProductPage = () => {
         price={product.price}
         imageUrl={product.imgUrl}
         description={product.description}
+        size={product.size}
+        cares={product.cares}
       />
+      <Recomended />
+      
     </div>
   );
 };

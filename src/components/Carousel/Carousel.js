@@ -56,13 +56,13 @@ const Carousel = () => {
           console.log(slide);
 
           return (
-            <div class="slide-container">
+            <div className="slide-container">
               {mobile ? (
                 <img src={slide.mobileImage} />
               ) : (
                 <img src={slide.image} />
               )}
-              <button class="slide-btn">SHOP NOW</button>
+              <button className="slide-btn">SHOP NOW</button>
             </div>
           );
         })}

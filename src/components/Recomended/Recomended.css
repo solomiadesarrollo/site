@@ -1,0 +1,18 @@
+.title__recomended-container {
+  background-color: transparent;
+  margin: 5.5rem 0;
+}
+.recomended__title {
+  margin: 0 0 5rem 0;
+  color: black;
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.recomended-container {
+  display: flex;
+  margin: 0 0 0 1rem;
+  gap: 1.5rem;
+  justify-content: baseline;
+}

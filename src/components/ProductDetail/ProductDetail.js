@@ -1,7 +1,7 @@
 import "./ProductDetail.css";
-import { ReactComponent as BackArrow } from "../../assets/icons/backarrow.svg";
+// import { ReactComponent as BackArrow } from "../../assets/icons/backarrow.svg";
 import { useHistory } from "react-router";
-import WaButton from "../WaButton";
+// import WaButton from "../WaButton";
 
 const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => {
   let history = useHistory();
@@ -12,7 +12,7 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
           <img src={imageUrl} />
         </div>
         <div className="info">
-          <div class="productName">
+          <div className="productName">
             <h1 className="big">{title}</h1>
           </div>
           <div className="description">
@@ -27,12 +27,12 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
             <h3 className="title">CUIDADOS</h3>
             <p className="text">{cares}</p>
           </div>
-          <div className="description">
-            <h3 className="title">CINTAS</h3>
-            <p className="text">Lavar a mano con agua tibia, no usar secadora. Secar al sol</p>
-          </div>
+          {/* <div className="description">
+          <h3 className="title">CINTAS</h3>
+          <p className="text">Lavar a mano con agua tibia, no usar secadora. Secar al sol</p>
+        </div> */}
           <div className="buy-price">
-            <a href="#" class="buy"><i class="fas fa-shopping-cart"></i>HACE TU PEDIDO</a>
+            <a href="#" className="buy"><i className="fas fa-shopping-cart"></i>HACE TU PEDIDO</a>
             <div className="price">
               <i className="fas fa-dollar-sign"></i>
               <h2>{price}</h2>
