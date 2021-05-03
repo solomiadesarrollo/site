@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import ViewportProvider from "./components/ViewportProvider";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
+import WaButton from "./components/WaButton";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             outerContainerId={"outer-container"}
           />
           <Navbar />
+          <WaButton />
           <Switch>
             <Route path="/categoria/:slug">
               <CategoryPage />

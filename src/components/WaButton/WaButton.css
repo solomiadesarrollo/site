@@ -1,7 +1,35 @@
 .wabutton-container {
-    width: 590px;
-    height: 80px;
-    background-color: #03BFC0;
-    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
     border: 1px transparent ;
+    z-index: 99999999;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+}
+
+.wabutton-container-open {
+    width: 320px;
+    height: 50px;
+    background-color: black;
+    border: 1px transparent ;
+    z-index: 99999999;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.wabutton-container-open button{
+    background-color: none;
+    border: 0px;
+
 }
