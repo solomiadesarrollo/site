@@ -18,7 +18,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 22.5rem;
+    height: 20.5rem;
 }
 
 .brandFeatures__images{
@@ -33,5 +33,5 @@
     font-style: normal;
     font-weight: bold;
     line-height: 1.8125rem;
-    width: 24.0787rem;
+    width: 22.0787rem;
 }

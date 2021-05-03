@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const breakpoint = 768;
 
-  const mobile = breakpoint > width ? "mobile" : "";
+  const mobile = breakpoint >=  width ? "mobile" : "";
 
   return (
     <nav className={`navbar-container ${mobile}`}>
