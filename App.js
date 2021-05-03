@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/Home';
 import Carousel from './components/Carousel/Carousel';
 import CategoryCard from './components/CategoryCard/CategoryCard';
-
 function App() {
   const [data, setData] = useState({
     cart: {

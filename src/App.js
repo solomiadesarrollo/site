@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <ViewportProvider>
-      <div id="outer-container">
+      <div id="router-container">
         <Router>
           <Sidebar
             pageWrapId={"page-wrap"}
