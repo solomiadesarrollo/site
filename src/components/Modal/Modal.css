@@ -1,0 +1,60 @@
+.modal__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 10rem;
+  box-shadow: 1rem 1rem 1rem rgba(26, 25, 25, 0.801);
+  z-index: 10;
+  min-width: 320;
+  border: 0.5rem solid black;
+}
+
+.close__modal {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  top: 1.3rem;
+  right: 1.5rem;
+}
+.modal__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  align-self: flex-start;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  line-height: 4rem;
+  margin: 5rem 0 3rem 0;
+  max-width: 31.25rem;
+}
+.modal__text {
+  align-self: center;
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  margin: 0;
+  max-width: 31.25rem;
+}
+
+@media (max-width: 576px) {
+  .window {
+    padding: 1rem 3rem;
+    gap: 1rem;
+  }
+  .modal__title {
+    font-size: 2rem;
+  }
+}
