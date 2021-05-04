@@ -1,5 +1,6 @@
 import { useState } from "react";
 import whatsapp from "../../assets/icons/whatsapp_icon.svg";
+import close from "../../assets/icons/close.png";
 import "./WaButton.css";
 
 const WaButton = () => {
@@ -17,11 +18,19 @@ const WaButton = () => {
           <img src={whatsapp} />
         </button>
       ) : (
-        <button className="wabutton-container-open">
-          <img src={whatsapp} />
-          <p>Whatsapp 11 5389-9043</p>
-          <button onClick={handleOpen}> X </button>
-        </button>
+        <div className="wabutton-container-open">
+          <a
+            href="https://web.whatsapp.com/send?phone=5491153862223"
+            target="_blank"
+            className="wplink"
+          >
+            <img src={whatsapp} />
+            <p>WHATSAPP +54 9 1153899043</p>
+          </a>
+          <button onClick={handleOpen} className="close-button-wap">
+            <img src={close} className="close-img" />
+          </button>
+        </div>
       )}
     </>
   );

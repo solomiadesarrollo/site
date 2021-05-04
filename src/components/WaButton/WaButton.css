@@ -1,35 +1,63 @@
 .wabutton-container {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border: 1px transparent ;
-    z-index: 99999999;
-    position: fixed;
-    top: 50%;
-    right: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: black;
+  border: 1px transparent;
+  z-index: 99999999;
+  position: fixed;
+  top: 50%;
+  right: 0px;
 }
 
 .wabutton-container-open {
-    width: 320px;
-    height: 50px;
-    background-color: black;
-    border: 1px transparent ;
-    z-index: 99999999;
-    position: fixed;
-    top: 50%;
-    right: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    padding-left: 10px;
-    gap: 10px;
-    justify-content: space-between;
+  width: 320px;
+  height: 50px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: black;
+  border: 1px transparent;
+  z-index: 99999999;
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  justify-content: space-between;
 }
 
-.wabutton-container-open button{
-    background-color: none;
-    border: 0px;
-
+.wabutton-container-open button {
+  background-color: none;
+  border: 0px;
 }
+
+img.close-img {
+  width: 20px;
+  background-color: transparent;
+}
+
+button.close-button-wap {
+  background-color: transparent;
+}
+
+a.wplink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+a.wplink:visited {
+  color: white;
+}
+
+a.wplink:hover {
+    color: lightgray;
+  }
+  
