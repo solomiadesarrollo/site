@@ -33,6 +33,8 @@ const ProductsFeatures = () => {
       });
   }, []);
 
+
+
   return (
     <>
       <div className="title__recomended-container">
@@ -42,16 +44,20 @@ const ProductsFeatures = () => {
           {products.map((item) => {
             console.log(item);
             return (
-              
-                <div>
-                  <RecomendedCard
-                    title={item.title}
-                    imgUrl={item.imgUrl}
-                    price={item.price}
-                    slug={item.slug.current}
-                  />
-                </div>
-              
+
+              <div>
+                <RecomendedCard
+
+
+                  title={item.title}
+                  imgUrl={item.imgUrl}
+                  price={item.price}
+                  slug={item.slug.current}
+
+
+                />
+              </div>
+
             );
           })}
         </div>
