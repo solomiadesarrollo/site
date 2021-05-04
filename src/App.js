@@ -8,11 +8,25 @@ import ViewportProvider from "./components/ViewportProvider";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 import WaButton from "./components/WaButton";
+import Modal from "./components/Modal/Modal";
+import { useState } from "react";
 
 function App() {
+  const [active, setActive] = useState(true);
+
+  const toggle = () => {
+    setActive(!active);
+  }
+
   return (
     <ViewportProvider>
       <div id="router-container">
+        <Modal active={active} toggle={toggle}>
+          <h2 className="modal__title">¿Cómo comprar?</h2>
+          <p className="modal__text">
+            Elegí el producto que más te guste de nuestra tienda y contáctanos
+             por What's App para finalizar el proceso.</p>
+        </Modal>
         <Router>
           <Sidebar
             pageWrapId={"page-wrap"}
