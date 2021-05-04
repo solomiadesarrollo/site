@@ -51,12 +51,16 @@ a.wplink {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  color: white;
 }
 
 a.wplink:visited {
   color: white;
 }
 
+a.wplink:active {
+    color: white;
+  }
 a.wplink:hover {
     color: lightgray;
   }
