@@ -1,9 +1,10 @@
 .title__container {
   text-align: center; 
+  margin-bottom: 10px;
 }
 .category__title {
   font-size: 5rem;
-  margin: 0 0 -5rem 0;
+  margin: 0 0 5rem 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -13,6 +14,4 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
- 
 }

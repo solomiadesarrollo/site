@@ -3,7 +3,7 @@ import sanityClient from "../../client.js";
 import CategoryCard from "../CategoryCard/CategoryCard.js";
 import "../CategoryList/CategoryList.css";
 import { urlFor } from "../../utils/images.js";
-import Slider from "react-slick";
+import AliceCarousel from "react-alice-carousel";
 import { useViewport } from "../ViewportProvider/ViewportProvider.js";
 
 const CategoryList = () => {
@@ -34,13 +34,20 @@ const CategoryList = () => {
       });
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    arrows: true,
-    speed: 500,
-    slidesToShow: width < breakpoint ? 1 : 4,
-    slidesToScroll: 1,
+  const items = categorias.map((categoria) => {
+    return (
+      <CategoryCard
+        title={categoria.title}
+        image={categoria.image}
+        slug={categoria.slug.current}
+      />
+    );
+  });
+
+  const responsive = {
+    0: { items: 1 },
+    365: { items: 2 },
+    768: { items: 4 },
   };
 
   return (
@@ -49,18 +56,18 @@ const CategoryList = () => {
         <h2 className="category__title">colección</h2>
       </div>
 
-      <Slider {...settings}>
-        {categorias.map((categoria) => {
-          console.log(categoria);
-          return (
-            <CategoryCard
-              title={categoria.title}
-              image={categoria.image}
-              slug={categoria.slug.current}
-            />
-          );
-        })}
-      </Slider>
+      <AliceCarousel
+        autoPlay
+        autoPlayStrategy="none"
+        autoPlayInterval={1000}
+        animationDuration={1000}
+        infinite
+        mouseTracking
+        items={items}
+        responsive={responsive}
+        disableButtonsControls
+        controlsStrategy="alternate"
+      />
     </>
   );
 };

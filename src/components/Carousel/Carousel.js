@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client";
 import { urlFor } from "../../utils/images.js";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import "./Carousel.css";
 import { useViewport } from "../ViewportProvider";
 
@@ -20,6 +19,7 @@ const Carousel = () => {
         `*[_type=="slideshow"]{
                   title,
                   description,
+                  slug,
                   image,
                   mobileimage
               }
@@ -27,9 +27,10 @@ const Carousel = () => {
       )
       .then((data) => {
         let imagenes = data.map((sli) => {
+          console.log(sli)
           return {
             title: sli.title,
-            slug: sli.slug,
+            slug: sli.slug.current,
             image: urlFor(sli.image).url(),
             mobileImage: urlFor(sli.mobileimage).url(),
           };
@@ -38,35 +39,35 @@ const Carousel = () => {
       });
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    fade: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
+  const items = slides.map((slide) => {
+    return (
+      <div className="item">
+        <a href={slide.slug}>
+          {mobile ? <img src={slide.mobileImage} /> : <img src={slide.image} />}
+        </a>
+      </div>
+    );
+  });
+
+  const responsive = {
+    0: { items: 1 },
+    768: { items: 1 },
   };
 
   return (
     <div className="slider-container">
-      <Slider {...settings}>
-        {slides.map((slide) => {
-          console.log(slide);
-
-          return (
-            <div className="slide-container">
-              {mobile ? (
-                <img src={slide.mobileImage} />
-              ) : (
-                <img src={slide.image} />
-              )}
-              <button className="slide-btn">SHOP NOW</button>
-            </div>
-          );
-        })}
-      </Slider>
+      <AliceCarousel
+        autoPlay
+        autoPlayStrategy="default"
+        autoPlayInterval={3000}
+        animationDuration={1000}
+        mouseTracking
+        items={items}
+        responsive={responsive}
+        disableButtonsControls
+        infinite
+        controlsStrategy="alternate"
+      />
     </div>
   );
 };
