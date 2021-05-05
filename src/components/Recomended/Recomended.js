@@ -3,10 +3,16 @@ import sanityClient from "../../client.js";
 import "./Recomended.css";
 import { urlFor } from "../../utils/images.js";
 import RecomendedCard from "../RecomendedCard/RecomendedCard";
+import AliceCarousel from "react-alice-carousel";
+import { useViewport } from "../ViewportProvider/ViewportProvider.js";
+
 
 const ProductsFeatures = () => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState("");
+  const { width } = useViewport();
+
+  const breakpoint = 768;
 
   useEffect(() => {
     sanityClient
@@ -35,36 +41,57 @@ const ProductsFeatures = () => {
 
 
 
+  const items = products.map((item) => {
+    console.log(item);
+    return (
+      <RecomendedCard
+
+
+        title={item.title}
+        imgUrl={item.imgUrl}
+        price={item.price}
+        slug={item.slug.current}
+
+
+      />
+    );
+
+  });
+
+  const responsive = {
+    0: { items: 1 },
+    768: { items: 4 },
+  };
+
   return (
     <>
       <div className="title__recomended-container">
         <h2 className="recomended__title">recomendados</h2>
-        <div className="recomended-container">
-
-          {products.map((item) => {
-            console.log(item);
-            return (
-
-              <div>
-                <RecomendedCard
-
-
-                  title={item.title}
-                  imgUrl={item.imgUrl}
-                  price={item.price}
-                  slug={item.slug.current}
-
-
-                />
-              </div>
-
-            );
-          })}
-        </div>
       </div>
-    </>
+      <div className="recomended-container">
+        <AliceCarousel
+          autoPlay
+          autoPlayStrategy="none"
+          autoPlayInterval={1000}
+          animationDuration={1000}
+          infinite
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          disableButtonsControls
+        />
+      </div>
 
+    </>
   );
+
+
+
+
+
+
+
+
 };
 
 export default ProductsFeatures;

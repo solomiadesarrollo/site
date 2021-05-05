@@ -42,6 +42,11 @@
   color: white;
   text-decoration: none;
 }
+.nav__item :hover {
+  text-decoration: underline;
+  color: white;
+
+}
 
 .footer__paragraph {
   margin: 0.5rem 0;

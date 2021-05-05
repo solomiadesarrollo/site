@@ -27,16 +27,16 @@ function Footer() {
             <div className="footer__element">
                 <h2>Seguinos</h2>
                 <div className="footer__elementBody footer__elementBody--redes">
-                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={whatsapp_icon} alt="phone"></img><p className="footer__paragraph">WhatsApp</p></Link>
-                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={ig_icon} alt="instagram"></img><p className="footer__paragraph">Instagram</p></Link>
-                    <Link className="footer__link footer__link--redes" to="/"><img className="footer__iconosRedes" src={facebook_icon} alt="facebook"></img><p className="footer__paragraph">Facebook</p></Link>
+                    <Link className="footer__link footer__link--redes nav__item" to="/"><img className="footer__iconosRedes" src={whatsapp_icon} alt="phone"></img><p className="footer__paragraph">WhatsApp</p></Link>
+                    <Link className="footer__link footer__link--redes nav__item" to="/"><img className="footer__iconosRedes" src={ig_icon} alt="instagram"></img><p className="footer__paragraph">Instagram</p></Link>
+                    <Link className="footer__link footer__link--redes nav__item" to="/"><img className="footer__iconosRedes" src={facebook_icon} alt="facebook"></img><p className="footer__paragraph">Facebook</p></Link>
                 </div>
             </div>
             <div className="footer__element footer__element--logo">
                 <img src={logo} alt="enolabaires" className="footer__logo"></img>
                 <div className="footer__copyright--container">
-                <p className="footer__copyright">© 2021 ENOLA BAIRES</p>
-                <p className="footer__copyright">TODOS LOS DERECHOS RESERVADOS</p>
+                    <p className="footer__copyright">© 2021 ENOLA BAIRES</p>
+                    <p className="footer__copyright">TODOS LOS DERECHOS RESERVADOS</p>
                 </div>
             </div>
         </footer>

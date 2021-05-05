@@ -17,7 +17,7 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
           </div>
           <div className="description">
             <h3 className="title">DESCRIPCION</h3>
-            <p classaName="text">{description}</p>
+            <p className="text">{description}</p>
           </div>
           <div className="description">
             <h3 className="title">TAMAÑO</h3>
@@ -27,10 +27,7 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
             <h3 className="title">CUIDADOS</h3>
             <p className="text">{cares}</p>
           </div>
-          {/* <div className="description">
-          <h3 className="title">CINTAS</h3>
-          <p className="text">Lavar a mano con agua tibia, no usar secadora. Secar al sol</p>
-        </div> */}
+
           <div className="buy-price">
             <a href="#" className="buy"><i className="fas fa-shopping-cart"></i>HACE TU PEDIDO</a>
             <div className="price">
