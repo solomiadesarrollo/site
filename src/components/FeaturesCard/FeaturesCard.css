@@ -6,11 +6,10 @@
 .product__card-img {
   width: 25rem;
   height: 31rem;
-  border-radius: 0.5rem;
 }
 .product__card-title {
   font-size: 5rem;
-  margin: 0 0 5rem 0;
+  margin: 0 0 1.5rem 0;
   text-align: center;
   text-transform: uppercase;
 }
