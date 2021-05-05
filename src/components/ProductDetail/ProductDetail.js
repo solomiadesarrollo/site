@@ -14,6 +14,7 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
         <div className="info">
           <div className="productName">
             <h1 className="big">{title}</h1>
+
           </div>
           <div className="description">
             <h3 className="title">DESCRIPCION</h3>
@@ -33,6 +34,8 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
             <div className="price">
               <i className="fas fa-dollar-sign"></i>
               <h2>{price}</h2>
+              
+
             </div>
           </div>
         </div>

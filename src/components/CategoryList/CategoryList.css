@@ -15,3 +15,17 @@
   justify-content: space-around;
   align-items: center;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .category__title {
+    width: 100vw;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+  
+}
+

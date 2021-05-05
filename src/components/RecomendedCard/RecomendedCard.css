@@ -6,7 +6,8 @@
   .productcard__img {
     width: 25rem;
     height: 31rem;
-    background-color: black;
+    padding: 1rem;
+    background: none;
   }
   .product__card-title {
     text-align: center;
@@ -19,3 +20,12 @@
     color: rgb(1, 89, 90);
   }
   
+  
+@media only screen and (max-width: 600px) {
+  .product__card-container {
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+  }
+  
+}

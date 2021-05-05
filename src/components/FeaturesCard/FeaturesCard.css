@@ -6,14 +6,15 @@
 .product__card-img {
   width: 25rem;
   height: 31rem;
-  background-color: black;
   border-radius: 0.5rem;
 }
 .product__card-title {
+  font-size: 5rem;
+  margin: 0 0 5rem 0;
   text-align: center;
-  font-size: 1.3rem;
-  color: #000000;
+  text-transform: uppercase;
 }
+
 .product__card-price {
   text-align: center;
   font-size: 1.3rem;
