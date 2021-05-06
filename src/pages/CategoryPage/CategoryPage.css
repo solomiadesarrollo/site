@@ -27,3 +27,7 @@
   justify-content: center;
   align-items: center;
 }
+.text__progress{
+  font-size: 2.5rem;
+  text-align: center;
+}

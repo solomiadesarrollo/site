@@ -52,7 +52,7 @@ const CategoryPage = () => {
       <div className="category-prods-container">
         {products.length === 0 ? (
           <div className="no-products">
-            <h3>NO HAY PRODUCTOS PARA LA CATEGORIA SELECCIONADA</h3>
+            <h3 className="text__progress">ESTAMOS TRABAJANDO EN ESTA COLECCIÓN</h3>
           </div>
         ) : (
           products.map((item) => {

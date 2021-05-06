@@ -81,7 +81,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="" to="">
+                <Link className="" to="/">
                   <img src={ig_icon} className={`social-icons ${mobile}`} alt="instagram icon" />
                 </Link>
               </li>
