@@ -27,13 +27,28 @@ const Navbar = () => {
         <>
           <div className="navbar-menu">
             <ul>
-              <Link to="/" className="navbar__link">
+              <Link to={{                             
+                pathname: '/',                    
+                state: {                        
+                  toHome: true                    
+                }                
+              }} className="navbar__link">
                 <li className="nav__item">HOME</li>
               </Link>
-              <Link to="/categoria" className="navbar__link">
+              <Link to={{                             
+                pathname: '/',                    
+                state: {                        
+                  toCategories: true                    
+                }                
+              }} className="navbar__link">
                 <li className="nav__item">COLECCIÓN</li>
               </Link>
-              <Link to="/" className="navbar__link">
+              <Link to={{                             
+                pathname: '/',                    
+                state: {                        
+                  toAboutUs: true                    
+                }                
+              }} className="navbar__link">
                 <li className="nav__item">NOSOTRAS</li>
               </Link>
               <Link className="navbar__link">

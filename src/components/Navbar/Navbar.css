@@ -12,6 +12,7 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
   position:sticky;
+  z-index: 2;
 }
 
 .navbar-container.mobile {

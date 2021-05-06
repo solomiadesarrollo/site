@@ -6,7 +6,7 @@ import { urlFor } from "../../utils/images.js";
 import AliceCarousel from "react-alice-carousel";
 import { useViewport } from "../ViewportProvider/ViewportProvider.js";
 
-const CategoryList = () => {
+const CategoryList = (props) => {
   const [categorias, setCategorias] = useState([]);
   const { width } = useViewport();
 
@@ -31,6 +31,7 @@ const CategoryList = () => {
           };
         });
         setCategorias(cat);
+        console.log(props.ref)
       });
   }, []);
 
@@ -51,7 +52,7 @@ const CategoryList = () => {
 
   return (
     <>
-      <div className="title__container">
+      <div className="title__container" id="categories">
         <h2 className="category__title">colección</h2>
       </div>
 
