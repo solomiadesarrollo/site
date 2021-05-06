@@ -8,11 +8,12 @@ import BrandFeatures from '../../components/BrandFeatures/BrandFeatures';
 
 
 const Home = () => {
+    
     const scrollToRef = (ref) => window.scrollTo(0,  Number.isInteger(ref) ? ref : ref.offsetTop - 130)  
     const executeScroll = (myRef) => scrollToRef(myRef)
     const location = useLocation()
     let myRef = ""
-    let stateToDelete
+
     useEffect(() => {
         const timer = setTimeout(()=> {   
             console.log(location.state)        
@@ -31,11 +32,9 @@ const Home = () => {
                 default:                    
                     break
             }
-        }, 400)
-        
+        }, 400)        
 
         return () => clearTimeout(timer);
-
 
     })
     return (
