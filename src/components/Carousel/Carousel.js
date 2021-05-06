@@ -17,8 +17,6 @@ const Carousel = () => {
     sanityClient
       .fetch(
         `*[_type=="slideshow"]{
-                  title,
-                  description,
                   slug,
                   image,
                   mobileimage
@@ -27,9 +25,8 @@ const Carousel = () => {
       )
       .then((data) => {
         let imagenes = data.map((sli) => {
-          console.log(sli)
+          console.log(sli);
           return {
-            title: sli.title,
             slug: sli.slug.current,
             image: urlFor(sli.image).url(),
             mobileImage: urlFor(sli.mobileimage).url(),

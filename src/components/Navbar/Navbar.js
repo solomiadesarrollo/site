@@ -30,27 +30,36 @@ const Navbar = () => {
               <Link to="/" className="navbar__link">
                 <li className="nav__item">HOME</li>
               </Link>
-              <Link to="/categoria" className="navbar__link">
+              <a href="#categorias" className="navbar__link">
                 <li className="nav__item">COLECCIÓN</li>
-              </Link>
-              <Link to="/" className="navbar__link">
+              </a>
+              <a href="#nosotras" className="navbar__link">
                 <li className="nav__item">NOSOTRAS</li>
-              </Link>
-              <Link className="navbar__link">
-                <li className="nav__item">CÓMO COMPRAR</li>
-              </Link>
+              </a>
             </ul>
           </div>
           <div className={`navbar-social ${mobile}`}>
             <ul>
               <li>
-                <Link className="" to="/"><img src={whatsapp_icon} className={`social-icons ${mobile}`} /></Link>
+                <Link className="" to="/">
+                  <img
+                    src={whatsapp_icon}
+                    className={`social-icons ${mobile}`}
+                  />
+                </Link>
               </li>
               <li>
-                <Link className="" to=""><img src={ig_icon} className={`social-icons ${mobile}`} /></Link>
+                <Link className="" to="">
+                  <img src={ig_icon} className={`social-icons ${mobile}`} />
+                </Link>
               </li>
               <li>
-                <Link className="" to="/"><img src={facebook_icon} className={`social-icons ${mobile}`} /></Link>
+                <Link className="" to="/">
+                  <img
+                    src={facebook_icon}
+                    className={`social-icons ${mobile}`}
+                  />
+                </Link>
               </li>
             </ul>
           </div>
