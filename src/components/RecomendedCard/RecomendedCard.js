@@ -16,6 +16,7 @@ function RecomendedCard({ title, imgUrl, slug, price }) {
       </Link>
       <p className="product__card-title">{title}</p>
       <p className="product__card-price">{parseCurrency(price)}</p>
+
     </div>
 
 

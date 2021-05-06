@@ -1,21 +1,50 @@
 import { elastic as Menu } from "react-burger-menu";
 import "./Sidebar.css";
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <Menu right>
-      <a className="menu-item" href="/">
+       <Link
+        to={{
+          pathname: "/",
+          state: {
+            toHome: true,
+          },
+        }}
+
+      >
+      <a className="menu-item">
         Home
       </a>
-      <a className="menu-item" href="/salads">
-        Productos
+      </Link>
+      <Link
+                to={{
+                  pathname: "/",
+                  state: {
+                    toCategories: true,
+                  },
+                }}
+                
+              >
+      <a className="menu-item">
+       Colección
       </a>
-      <a className="menu-item" href="/pizzas">
-        Nuestro Proyecto
+      </Link>
+      <Link
+                to={{
+                  pathname: "/",
+                  state: {
+                    toAboutUs: true,
+                  },
+                }}
+               
+              >
+      <a className="menu-item" >
+        Nosotras
       </a>
-      <a className="menu-item" href="/desserts">
-        Como Comprar
-      </a>
+      </Link>
+      
     </Menu>
   );
 };

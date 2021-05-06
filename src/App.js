@@ -41,7 +41,9 @@ function App() {
             <Route path="/producto/:slug">
               <ProductPage />
             </Route>
-            <Route path="/nosotras"></Route>
+            <Route path="/nosotras">
+              
+            </Route>
             <Route path="/">
               <HomePage />
             </Route>

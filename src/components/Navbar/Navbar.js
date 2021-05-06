@@ -16,7 +16,17 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar-container ${mobile}`}>
-      <img src={logo} className={`navbar-logo ${mobile}`} />
+      <Link
+        to={{
+          pathname: "/",
+          state: {
+            toHome: true,
+          },
+        }}
+
+      >
+        <img src={logo} className={`navbar-logo ${mobile}`} />
+      </Link>
 
       {mobile !== "" ? (
         ""
@@ -72,7 +82,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link className="" to="">
-                  <img src={ig_icon} className={`social-icons ${mobile}`} alt="instagram icon"/>
+                  <img src={ig_icon} className={`social-icons ${mobile}`} alt="instagram icon" />
                 </Link>
               </li>
               <li>
