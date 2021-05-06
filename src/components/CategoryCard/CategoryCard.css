@@ -5,17 +5,16 @@ a.category-link {
 .category-link-title {
   font-weight: bold;
   font-size: 3rem;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 0.3rem 0.1rem #000000;
   text-align: center;
   text-transform: uppercase;
   color: rgb(250, 246, 246);
-  margin: -4.7rem 0 0 0;
+  margin: -5rem 0 0 -5rem;
 }
 
 .category-link-image {
-  width: 340px;
-  padding: 0.5rem;
-  /* border-radius: 1rem; */
+  width: 22rem;
+  padding: 0;
   height: 36rem;
   margin: 0 0.5rem;
   object-fit: cover;

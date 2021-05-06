@@ -57,7 +57,7 @@ img.navbar-logo{
   gap: 2rem;
 }
 .navbar-social.mobile ul {
-  padding: 0px;
+  padding: 0;
   gap: 1rem;
   align-items: center;
 }

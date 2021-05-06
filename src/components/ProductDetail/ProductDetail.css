@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 2.5rem;
     overflow: hidden;
   }
   
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 860px;
+    width: 54rem;
   }
   
   .product{
@@ -37,7 +37,6 @@
     width: 100%;
     height: auto;
     position: relative;
-    /* object-fit: cover; */
     object-position: center center;
   }
   
@@ -54,11 +53,11 @@
     width: 50%;
     background-color:none;
     z-index: 1;
-    padding: 35px 40px;
+    padding: 2rem 2.5rem;
   }
   
   .productName{
-    padding: 0 0 10px 0;
+    padding: 0 0 0.5rem 0;
   }
   
   .productName div{
@@ -67,18 +66,18 @@
   }
   
   .productName div .big{
-    margin-right: 10px;
+    margin-right: 0.5rem;
     font-size: 2rem;
     color: #333;
     line-height: 1;
   }
   
   .productName, .description, .color-container, .size-container{
-    border-bottom: 1px solid #dadada;
+    border-bottom: 0.3rem solid #dadada;
   }
   
   .description{
-    padding: 10px 0;
+    padding: 0.5rem 0;
   }
   
   .title{
@@ -90,11 +89,11 @@
   
   .text{
     color: #555;
-    font-size: 17px;
+    font-size: 1.3rem;
   }
   
   .buy-price{
-    padding-top: 15px;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,7 +113,7 @@
   
   .price i{
     font-size: 1.4rem;
-    margin-right: 1px;
+    margin-right: 0.05rem;
   }
   
   .buy{
@@ -123,7 +122,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.05rem;
     font-weight: 500;
     font-size: 1.1rem;
     transition: .5s;
@@ -134,7 +133,7 @@
   }
   
   .buy i{
-    margin-right: 2px;
+    margin-right: 0.08px;
   }
   
   @media (max-width: 1070px){
@@ -147,7 +146,7 @@
     .card{
         flex-direction: column;
         width: 100%;
-        box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 2rem 0.05rem rgba(0, 0, 0, 0.2);
     }
     
     .card > div{
@@ -196,23 +195,23 @@
     }
   
     .size{
-        width: 30px;
-        height: 30px;
-        margin: 0 8px;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0 0.5rem;
         font-size: .9rem;
-        line-height: 30px;
+        line-height: 1.8rem;
     }
   
     .color{
-        margin: 0 6px;
-        width: 0 20px;
-        width: 20px;
-        height: 20px;
-        border-width: 4px;
+        margin: 0 0.3rem;
+        width: 0 1.25rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-width: 0.25rem;
     }
   
     .info{
-        padding: 20px;
+        padding: 1.25rem;
     }
   }
   
@@ -222,7 +221,7 @@
     }
   
     .container{
-        padding: 20px;
+        padding: 1.25rem;
     }
   }
 
@@ -250,38 +249,3 @@
 
 
 
-
-/*CÓDIGO MARTÍN*/
-/* .productdetail-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    
-}
-
-
-.productdetail-img{
-    height: 800px;
-    width: 505px;
-    
-}
-
-.productdetail-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    border-bottom: 4px solid #03BFC0;
-}
-
-.productdetail-buttons {
-    margin-top: auto;
-    margin-bottom: 17px;
-}
-
-
-.productdetail-buttons button{
-    border: none;
-    background: none;
-} */

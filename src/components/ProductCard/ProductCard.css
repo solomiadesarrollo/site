@@ -1,32 +1,32 @@
 .productcard-container {
-    height: 600px;
-    width: 400px;
+    height: 37rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 .productcard-img {
-    width: 400px;
-    height: 500px;
+    width: 25rem;
+    height: 31.25rem;
 }
 
 .productcard-title{
-    font-size: 16px;
-    margin: 12px;
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
 }
 
 .productcard-price{
     color: #01595A;
-    font-size: 16px;
-    margin: 0px;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
 }
 
 .productcard-color-variant{
     background-color: grey;
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     border-radius: 100%;
 }
