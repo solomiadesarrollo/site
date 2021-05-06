@@ -6,7 +6,6 @@ import FeaturesCard from "../FeaturesCard/FeaturesCard";
 
 const ProductsFeatures = () => {
   const [products, setProducts] = useState([]);
-  const [category, setCategory] = useState("");
 
   useEffect(() => {
     sanityClient
@@ -19,7 +18,6 @@ const ProductsFeatures = () => {
       `
       )
       .then((data) => {
-        setCategory(data[0].title);
         let updatedProds = data[0].products.map((product) => {
           let firstImg = product.defaultProductVariant.images[0];
           return {
@@ -38,26 +36,22 @@ const ProductsFeatures = () => {
       <div className="title__features-container">
         <h2 className="features__title">destacados</h2>
         <div className="category-container">
-
           {products.map((item) => {
             console.log(item);
             return (
-              
-                <div>
-                  <FeaturesCard
-                    title={item.title}
-                    imgUrl={item.imgUrl}
-                    price={item.price}
-                    slug={item.slug.current}
-                  />
-                </div>
-              
+              <div>
+                <FeaturesCard
+                  title={item.title}
+                  imgUrl={item.imgUrl}
+                  price={item.price}
+                  slug={item.slug.current}
+                />
+              </div>
             );
           })}
         </div>
       </div>
     </>
-
   );
 };
 

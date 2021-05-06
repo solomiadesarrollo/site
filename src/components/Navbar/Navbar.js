@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
 import whatsapp_icon from "../../assets/icons/whatsapp_icon.svg";
 import facebook_icon from "../../assets/icons/facebook_icon.svg";
-import { slide as Menu } from "react-burger-menu";
 import ig_icon from "../../assets/icons/ig_icon.svg";
 import { useViewport } from "../ViewportProvider";
-import line from "../../assets/icons/line.svg";
-import Sidebar from "../Sidebar";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -27,15 +24,39 @@ const Navbar = () => {
         <>
           <div className="navbar-menu">
             <ul>
-              <Link to="/" className="navbar__link">
+              <Link
+                to={{
+                  pathname: "/",
+                  state: {
+                    toHome: true,
+                  },
+                }}
+                className="navbar__link"
+              >
                 <li className="nav__item">HOME</li>
               </Link>
-              <a href="#categorias" className="navbar__link">
+              <Link
+                to={{
+                  pathname: "/",
+                  state: {
+                    toCategories: true,
+                  },
+                }}
+                className="navbar__link"
+              >
                 <li className="nav__item">COLECCIÓN</li>
-              </a>
-              <a href="#nosotras" className="navbar__link">
+              </Link>
+              <Link
+                to={{
+                  pathname: "/",
+                  state: {
+                    toAboutUs: true,
+                  },
+                }}
+                className="navbar__link"
+              >
                 <li className="nav__item">NOSOTRAS</li>
-              </a>
+              </Link>
             </ul>
           </div>
           <div className={`navbar-social ${mobile}`}>
@@ -45,12 +66,13 @@ const Navbar = () => {
                   <img
                     src={whatsapp_icon}
                     className={`social-icons ${mobile}`}
+                    alt="whatsapp icon"
                   />
                 </Link>
               </li>
               <li>
                 <Link className="" to="">
-                  <img src={ig_icon} className={`social-icons ${mobile}`} />
+                  <img src={ig_icon} className={`social-icons ${mobile}`} alt="instagram icon"/>
                 </Link>
               </li>
               <li>
@@ -58,6 +80,7 @@ const Navbar = () => {
                   <img
                     src={facebook_icon}
                     className={`social-icons ${mobile}`}
+                    alt="facebook icon"
                   />
                 </Link>
               </li>

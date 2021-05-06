@@ -19,8 +19,18 @@ function Footer() {
             <div className="footer__element">
                 <h2>Nosotras</h2>
                 <div>
-                    <Link className="footer__link" to="/"><p className="footer__paragraph">Quiénes somos</p></Link>
-                    <Link className="footer__link" to="/"><p className="footer__paragraph">Catálogo</p></Link>
+                    <Link className="footer__link" to={{                             
+                        pathname: '/',                    
+                        state: {                        
+                        toAboutUs: true                    
+                        }                
+                    }}><p className="footer__paragraph">Quiénes somos</p></Link>
+                    <Link className="footer__link" to={{                             
+                        pathname: '/',                    
+                        state: {                        
+                        toCategories: true                    
+                        }                
+                    }}><p className="footer__paragraph">Catálogo</p></Link>
                     <Link className="footer__link" to="/"><p className="footer__paragraph">Contacto</p></Link>
                 </div>
             </div>

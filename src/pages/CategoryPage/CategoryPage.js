@@ -30,6 +30,7 @@ const CategoryPage = () => {
       )
       .then((data) => {
         setCategory(data[0].title);
+        console.log(products);
         let updatedProds = data[0].products.map((product) => {
           let firstImg = product.defaultProductVariant.images[0];
           return {
@@ -49,21 +50,27 @@ const CategoryPage = () => {
         <h1>{category.toUpperCase()}</h1>
       </div>
       <div className="category-prods-container">
-        {products.map((item) => {
-          console.log(item);
-          return (
-            <>
-              <div>
-                <ProductCard
-                  title={item.title}
-                  imgUrl={item.imgUrl}
-                  price={item.price}
-                  slug={item.slug.current}
-                />
-              </div>
-            </>
-          );
-        })}
+        {products.length === 0 ? (
+          <div className="no-products">
+            <h3>NO HAY PRODUCTOS PARA LA CATEGORIA SELECCIONADA</h3>
+          </div>
+        ) : (
+          products.map((item) => {
+            console.log(item);
+            return (
+              <>
+                <div>
+                  <ProductCard
+                    title={item.title}
+                    imgUrl={item.imgUrl}
+                    price={item.price}
+                    slug={item.slug.current}
+                  />
+                </div>
+              </>
+            );
+          })
+        )}
       </div>
     </>
   );

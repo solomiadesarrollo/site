@@ -4,13 +4,9 @@ import CategoryCard from "../CategoryCard/CategoryCard.js";
 import "../CategoryList/CategoryList.css";
 import { urlFor } from "../../utils/images.js";
 import AliceCarousel from "react-alice-carousel";
-import { useViewport } from "../ViewportProvider/ViewportProvider.js";
 
-const CategoryList = () => {
+const CategoryList = (props) => {
   const [categorias, setCategorias] = useState([]);
-  const { width } = useViewport();
-
-  const breakpoint = 768;
 
   useEffect(() => {
     sanityClient
@@ -51,7 +47,7 @@ const CategoryList = () => {
 
   return (
     <>
-      <div className="title__container">
+      <div className="title__container" id="categories">
         <h2 className="category__title">colección</h2>
       </div>
 
