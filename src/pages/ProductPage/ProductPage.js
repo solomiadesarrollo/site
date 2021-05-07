@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import sanityClient from "../../client";
 import ProductDetail from "../../components/ProductDetail";
-import { urlFor } from "../../utils/images"
+import { urlFor } from "../../utils/images";
 import { parseCurrency } from "../../utils/currency";
 import Recomended from "../../components/Recomended/Recomended";
 
@@ -29,8 +29,7 @@ const ProductPage = () => {
     `
       )
       .then((prod) => {
-
-        console.log(prod)
+        console.log(prod);
         let firstImg = prod[0].defaultProductVariant.images[0];
         let upadtedProd = {
           title: prod[0].title,
@@ -38,7 +37,7 @@ const ProductPage = () => {
           cares: prod[0].cares,
           price: parseCurrency(prod[0].defaultProductVariant.price),
           imgUrl: urlFor(firstImg).url(),
-          description: prod[0].description
+          description: prod[0].description,
         };
         setProduct(upadtedProd);
       });
@@ -55,7 +54,6 @@ const ProductPage = () => {
         cares={product.cares}
       />
       <Recomended />
-      
     </div>
   );
 };

@@ -32,9 +32,14 @@ const ProductsFeatures = () => {
       });
   }, []);
 
+  const handleProdClick = (slug) => {
+    console.log(slug);
+  };
+
   const items = products.map((item) => {
     return (
       <RecomendedCard
+        key={item.title}
         title={item.title}
         imgUrl={item.imgUrl}
         price={item.price}
@@ -65,6 +70,7 @@ const ProductsFeatures = () => {
           responsive={responsive}
           disableButtonsControls
           controlsStrategy="alternate"
+          handleClick={(s) => handleProdClick(s)}
         />
       </div>
     </>

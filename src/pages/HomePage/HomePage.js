@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         const timer = setTimeout(()=> {   
-
+            console.log(location.state)        
             switch(location.state !== null && location.state !== undefined ? Object.keys(location.state)[0] : ""){
                 case "toHome":
                     executeScroll(0)  

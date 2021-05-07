@@ -23,9 +23,12 @@ const Navbar = () => {
             toHome: true,
           },
         }}
-
       >
-        <img src={logo} className={`navbar-logo ${mobile}`} alt="ENOLA BAIRES" />
+        <img
+          src={logo}
+          className={`navbar-logo ${mobile}`}
+          alt="ENOLA BAIRES"
+        />
       </Link>
 
       {mobile !== "" ? (
@@ -72,27 +75,46 @@ const Navbar = () => {
           <div className={`navbar-social ${mobile}`}>
             <ul>
               <li>
-                <Link className="" to="/">
+                <a
+                  className=""
+                  href="https://web.whatsapp.com/send?phone=5491158496538"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={whatsapp_icon}
                     className={`social-icons ${mobile}`}
                     alt="whatsapp icon"
                   />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="" to="/">
-                  <img src={ig_icon} className={`social-icons ${mobile}`} alt="instagram icon" />
-                </Link>
+                <a
+                  className=""
+                  href="https://www.instagram.com/enola.baires/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={ig_icon}
+                    className={`social-icons ${mobile}`}
+                    alt="instagram icon"
+                  />
+                </a>
               </li>
               <li>
-                <Link className="" to="/">
+                <a
+                  className=""
+                  href="https://www.facebook.com/Enola-Baires-105404571634738"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={facebook_icon}
                     className={`social-icons ${mobile}`}
                     alt="facebook icon"
                   />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

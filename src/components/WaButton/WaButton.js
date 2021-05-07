@@ -20,13 +20,13 @@ const WaButton = () => {
       ) : (
         <div className="wabutton-container-open">
           <a
-            href="https://web.whatsapp.com/send?phone=5491153862223"
+            href="https://web.whatsapp.com/send?phone=5491158496538"
             target="_blank"
             className="wplink"
-            rel="noreferrer" 
+            rel="noreferrer"
           >
             <img src={whatsapp} />
-            <p>WHATSAPP +54 9 1153899043</p>
+            <p>WHATSAPP +54 9 11 58496538</p>
           </a>
           <button onClick={handleOpen} className="close-button-wap">
             <img

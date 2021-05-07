@@ -19,16 +19,16 @@ function App() {
   };
 
   return (
-    <ViewportProvider>
-      <div id="router-container">
-        <Modal active={active} toggle={toggle}>
-          <h2 className="modal__title">¿Cómo comprar?</h2>
-          <p className="modal__text">
-            Elegí el producto que más te guste de nuestra tienda y contáctanos
-            por What's App para finalizar el proceso.
-          </p>
-        </Modal>
-        <Router>
+    <Router>
+      <ViewportProvider>
+        <div id="router-container">
+          <Modal active={active} toggle={toggle}>
+            <h2 className="modal__title">¿Cómo comprar?</h2>
+            <p className="modal__text">
+              Elegí el producto que más te guste de nuestra tienda y contáctanos
+              por What's App para finalizar el proceso.
+            </p>
+          </Modal>
           <Sidebar
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
@@ -36,17 +36,23 @@ function App() {
           <Navbar />
           <WaButton />
           <Switch>
-            <Route path="/categoria/:slug" component={CategoryPage} />
-            <Route path="/producto/:slug" component={ProductPage} />
-            <Route path="/nosotras" />
-            <Route path="/">
-              <HomePage />
-            </Route>
+            <Route
+              path="/producto/:slug"
+              component={(props) => (
+                <ProductPage
+                  timestamp={new Date().getTime().toString()}
+                  {...props}
+                />
+              )}
+            />
+            <Route exact path="/categoria/:slug" component={CategoryPage} />
+            <Route exact path="/nosotras" />
+            <Route exact path="/" component={HomePage} />
           </Switch>
           <Footer />
-        </Router>
-      </div>
-    </ViewportProvider>
+        </div>
+      </ViewportProvider>
+    </Router>
   );
 }
 
