@@ -37,7 +37,6 @@ const ProductsFeatures = () => {
         <h2 className="features__title">destacados</h2>
         <div className="category-container">
           {products.map((item) => {
-            console.log(item);
             return (
               <div>
                 <FeaturesCard

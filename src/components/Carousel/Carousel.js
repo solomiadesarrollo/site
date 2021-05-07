@@ -26,7 +26,6 @@ const Carousel = () => {
       )
       .then((data) => {
         let imagenes = data.map((sli) => {
-          console.log(sli);
           return {
             slug: sli.slug.current,
             title: sli.title,

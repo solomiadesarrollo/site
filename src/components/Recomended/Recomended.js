@@ -1,18 +1,12 @@
 import { useEffect, useState } from "react";
 import sanityClient from "../../client.js";
-import "./Recomended.css";
 import { urlFor } from "../../utils/images.js";
 import RecomendedCard from "../RecomendedCard/RecomendedCard";
 import AliceCarousel from "react-alice-carousel";
-import { useViewport } from "../ViewportProvider/ViewportProvider.js";
-
+import "./Recomended.css";
 
 const ProductsFeatures = () => {
   const [products, setProducts] = useState([]);
-  const [category, setCategory] = useState("");
-  const { width } = useViewport();
-
-  const breakpoint = 768;
 
   useEffect(() => {
     sanityClient
@@ -25,7 +19,6 @@ const ProductsFeatures = () => {
       `
       )
       .then((data) => {
-        setCategory(data[0].title);
         let updatedProds = data[0].products.map((product) => {
           let firstImg = product.defaultProductVariant.images[0];
           return {
@@ -39,23 +32,15 @@ const ProductsFeatures = () => {
       });
   }, []);
 
-
-
   const items = products.map((item) => {
-    console.log(item);
     return (
       <RecomendedCard
-
-
         title={item.title}
         imgUrl={item.imgUrl}
         price={item.price}
         slug={item.slug.current}
-
-
       />
     );
-
   });
 
   const responsive = {
@@ -79,19 +64,11 @@ const ProductsFeatures = () => {
           items={items}
           responsive={responsive}
           disableButtonsControls
+          controlsStrategy="alternate"
         />
       </div>
-
     </>
   );
-
-
-
-
-
-
-
-
 };
 
 export default ProductsFeatures;

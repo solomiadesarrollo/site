@@ -15,7 +15,7 @@ const WaButton = () => {
     <>
       {open ? (
         <button className="wabutton-container" onClick={handleOpen}>
-          <img src={whatsapp} />
+          <img src={whatsapp} alt="Contactanos al whatsapp" />
         </button>
       ) : (
         <div className="wabutton-container-open">
@@ -23,12 +23,17 @@ const WaButton = () => {
             href="https://web.whatsapp.com/send?phone=5491153862223"
             target="_blank"
             className="wplink"
+            rel="noreferrer" 
           >
             <img src={whatsapp} />
             <p>WHATSAPP +54 9 1153899043</p>
           </a>
           <button onClick={handleOpen} className="close-button-wap">
-            <img src={close} className="close-img" />
+            <img
+              src={close}
+              className="close-img"
+              alt="Contactanos al whatsapp"
+            />
           </button>
         </div>
       )}

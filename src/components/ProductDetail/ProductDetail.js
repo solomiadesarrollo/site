@@ -1,20 +1,22 @@
 import "./ProductDetail.css";
-// import { ReactComponent as BackArrow } from "../../assets/icons/backarrow.svg";
-import { useHistory } from "react-router";
-// import WaButton from "../WaButton";
 
-const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => {
-  let history = useHistory();
+const ProductDetail = ({
+  title,
+  imageUrl,
+  price,
+  description,
+  size,
+  cares,
+}) => {
   return (
     <div className="container">
       <div className="card">
         <div className="product">
-          <img src={imageUrl} />
+          <img src={imageUrl}  alt={title}/>
         </div>
         <div className="info">
           <div className="productName">
             <h1 className="big">{title}</h1>
-
           </div>
           <div className="description">
             <h3 className="title">DESCRIPCION</h3>
@@ -30,12 +32,12 @@ const ProductDetail = ({ title, imageUrl, price, description, size, cares }) => 
           </div>
 
           <div className="buy-price">
-            <a href="#" className="buy"><i className="fas fa-shopping-cart"></i>HACE TU PEDIDO</a>
+            <a href="https://web.whatsapp.com/send?phone=5493533687546" className="buy">
+              <i className="fas fa-shopping-cart"></i>HACE TU PEDIDO
+            </a>
             <div className="price">
               <i className="fas fa-dollar-sign"></i>
               <h2>{price}</h2>
-              
-
             </div>
           </div>
         </div>

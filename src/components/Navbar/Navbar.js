@@ -25,7 +25,7 @@ const Navbar = () => {
         }}
 
       >
-        <img src={logo} className={`navbar-logo ${mobile}`} />
+        <img src={logo} className={`navbar-logo ${mobile}`} alt="ENOLA BAIRES" />
       </Link>
 
       {mobile !== "" ? (

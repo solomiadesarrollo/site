@@ -16,7 +16,7 @@ function App() {
 
   const toggle = () => {
     setActive(!active);
-  }
+  };
 
   return (
     <ViewportProvider>
@@ -25,7 +25,8 @@ function App() {
           <h2 className="modal__title">¿Cómo comprar?</h2>
           <p className="modal__text">
             Elegí el producto que más te guste de nuestra tienda y contáctanos
-             por What's App para finalizar el proceso.</p>
+            por What's App para finalizar el proceso.
+          </p>
         </Modal>
         <Router>
           <Sidebar
@@ -35,15 +36,9 @@ function App() {
           <Navbar />
           <WaButton />
           <Switch>
-            <Route path="/categoria/:slug">
-              <CategoryPage />
-            </Route>
-            <Route path="/producto/:slug">
-              <ProductPage />
-            </Route>
-            <Route path="/nosotras">
-              
-            </Route>
+            <Route path="/categoria/:slug" component={CategoryPage} />
+            <Route path="/producto/:slug" component={ProductPage} />
+            <Route path="/nosotras" />
             <Route path="/">
               <HomePage />
             </Route>

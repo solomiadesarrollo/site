@@ -6,7 +6,7 @@ const ProductCard = ({ title, price, imgUrl, slug }) => {
   return (
     <div className="productcard-container">
       <Link to={`/producto/${slug}`} style={{ textDecoration: "none" }}>
-        <img src={imgUrl} className="productcard-img" />
+        <img src={imgUrl} className="productcard-img" alt={title} />
       </Link>
       <p className="productcard-title">{title}</p>
       <p className="productcard-price">{parseCurrency(price)}</p>
