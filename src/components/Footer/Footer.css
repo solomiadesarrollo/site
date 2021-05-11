@@ -80,6 +80,9 @@
   line-height: 1.5rem;
   margin: 0;
 }
+li {
+  list-style: none;
+}
 
 @media (max-width: 576px) {
   .footer__element {

@@ -1,11 +1,11 @@
 import { elastic as Menu } from "react-burger-menu";
 import "./Sidebar.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <Menu right>
-       <Link
+      <Link
         to={{
           pathname: "/",
           state: {
@@ -14,37 +14,41 @@ const Sidebar = () => {
         }}
 
       >
-      <a className="menu-item">
-        Home
+
+        <a className="menu-item">
+
+          Home
       </a>
       </Link>
       <Link
-                to={{
-                  pathname: "/",
-                  state: {
-                    toCategories: true,
-                  },
-                }}
-                
-              >
-      <a className="menu-item">
-       Colección
+        to={{
+          pathname: "/",
+          state: {
+            toCategories: true,
+          },
+        }}
+
+      >
+
+        <a className="menu-item">
+          Colección
       </a>
+
       </Link>
       <Link
-                to={{
-                  pathname: "/",
-                  state: {
-                    toAboutUs: true,
-                  },
-                }}
-               
-              >
-      <a className="menu-item" >
-        Nosotras
+        to={{
+          pathname: "/",
+          state: {
+            toAboutUs: true,
+          },
+        }}
+
+      >
+        <a className="menu-item" >
+          Nosotras
       </a>
       </Link>
-      
+
     </Menu>
   );
 };
