@@ -26,7 +26,7 @@ function App() {
             <h2 className="modal__title">¿Cómo comprar?</h2>
             <p className="modal__text">
               Elegí el producto que más te guste de nuestra tienda y contáctanos
-              por What's App para finalizar el proceso.
+              por WhatsApp para finalizar el proceso.
             </p>
           </Modal>
           <Sidebar
