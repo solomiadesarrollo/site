@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ViewportProvider from "./components/ViewportProvider";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
@@ -35,6 +36,7 @@ function App() {
           />
           <Navbar />
           <WaButton />
+          <ScrollToTop />
           <Switch>
             <Route
               path="/producto/:slug"

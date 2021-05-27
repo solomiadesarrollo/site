@@ -11,7 +11,6 @@ const ProductPage = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    console.log(slug);
     sanityClient
       .fetch(
         `*[_type=="product" && slug.current=="${slug}" ]{
@@ -28,8 +27,7 @@ const ProductPage = () => {
     }
     `
       )
-      .then((prod) => {
-        console.log(prod);
+      .then((prod) => { 
         let firstImg = prod[0].defaultProductVariant.images[0];
         let upadtedProd = {
           title: prod[0].title,
@@ -41,7 +39,7 @@ const ProductPage = () => {
         };
         setProduct(upadtedProd);
       });
-  }, []);
+  }, [slug]);
 
   return (
     <div>

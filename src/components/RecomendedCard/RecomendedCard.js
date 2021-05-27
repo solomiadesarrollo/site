@@ -7,7 +7,7 @@ function RecomendedCard({ title, imgUrl, slug, price, handleClick }) {
   let history = useHistory();
   handleClick = () => {
     history.push(`/producto/${slug}`);
-    history.go(0);
+    window.scrollTo(0,0)
   };
   return (
     <div className="product__card-container" onClick={handleClick}>
