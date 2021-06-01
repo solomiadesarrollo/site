@@ -77,7 +77,7 @@ const Navbar = () => {
               <li>
                 <a
                   className=""
-                  href="https://web.whatsapp.com/send?phone=5491158496538"
+                  href="https://wa.link/6i1kkj"
                   target="_blank"
                   rel="noreferrer"
                 >
