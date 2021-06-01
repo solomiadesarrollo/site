@@ -21,6 +21,7 @@ const Home = () => {
                     executeScroll(0)  
                     break
                 case "toCategories":
+                    // eslint-disable-next-line react-hooks/exhaustive-deps
                     myRef = document.querySelector("#categories")
                     executeScroll(myRef)  
                     break

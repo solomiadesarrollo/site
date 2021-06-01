@@ -1,6 +1,7 @@
 .product__card-container {
     width: 25.3rem;
     height: 35.7rem;
+    cursor:pointer
   }
   
   .productcard__img {

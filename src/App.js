@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ViewportProvider from "./components/ViewportProvider";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
@@ -26,7 +27,7 @@ function App() {
             <h2 className="modal__title">¿Cómo comprar?</h2>
             <p className="modal__text">
               Elegí el producto que más te guste de nuestra tienda y contáctanos
-              por What's App para finalizar el proceso.
+              por WhatsApp para finalizar el proceso.
             </p>
           </Modal>
           <Sidebar
@@ -35,6 +36,7 @@ function App() {
           />
           <Navbar />
           <WaButton />
+          <ScrollToTop />
           <Switch>
             <Route
               path="/producto/:slug"
