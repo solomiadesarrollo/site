@@ -35,7 +35,7 @@ const CategoryPage = () => {
           let firstImg = product.defaultProductVariant.images[0];
           return {
             title: product.title,
-            slug: product.slug,
+            slug: product.slug.current,
             price: product.defaultProductVariant.price,
             imgUrl: urlFor(firstImg).url(),
           };
@@ -64,7 +64,7 @@ const CategoryPage = () => {
                     title={item.title}
                     imgUrl={item.imgUrl}
                     price={item.price}
-                    slug={item.slug.current}
+                    slug={item.slug}
                   />
                 </div>
               </>
