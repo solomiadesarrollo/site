@@ -21,10 +21,10 @@ const CategoryPage = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type=="category" && slug.current=="${slug}" ]{
+        `*[_type=="category" && slug.current=="${slug}"]{
             title,
             slug,
-            "products": *[_type=="product" && references(^._id)]
+            "products": *[_type=="product" && references(^._id) && active==true]
         }
         `
       )
