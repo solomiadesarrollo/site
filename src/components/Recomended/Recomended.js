@@ -55,24 +55,30 @@ const ProductsFeatures = () => {
 
   return (
     <>
-      <div className="title__recomended-container">
-        <h2 className="recomended__title">recomendados</h2>
-      </div>
-      <div className="recomended-container">
-        <AliceCarousel
-          autoPlay
-          autoPlayStrategy="none"
-          autoPlayInterval={1000}
-          animationDuration={1000}
-          infinite
-          mouseTracking
-          items={items}
-          responsive={responsive}
-          disableButtonsControls
-          controlsStrategy="alternate"
-          handleClick={(s) => handleProdClick(s)}
-        />
-      </div>
+      {items.length > 0 ? (
+        <>
+          <div className="title__recomended-container">
+            <h2 className="recomended__title">recomendados</h2>
+          </div>
+          <div className="recomended-container">
+            <AliceCarousel
+              autoPlay
+              autoPlayStrategy="none"
+              autoPlayInterval={1000}
+              animationDuration={1000}
+              infinite
+              mouseTracking
+              items={items}
+              responsive={responsive}
+              disableButtonsControls
+              controlsStrategy="alternate"
+              handleClick={(s) => handleProdClick(s)}
+            />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
     </>
   );
 };
