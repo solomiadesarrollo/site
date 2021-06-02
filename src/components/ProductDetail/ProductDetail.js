@@ -32,7 +32,7 @@ const ProductDetail = ({
           </div>
 
           <div className="buy-price">
-            <a href="https://web.whatsapp.com/send?phone=5493533687546" className="buy">
+            <a href="https://wa.link/6i1kkj" className="buy">
               <i className="fas fa-shopping-cart"></i>HACE TU PEDIDO
             </a>
             <div className="price">
